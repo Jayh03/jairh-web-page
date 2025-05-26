@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [unreleased]
 
+## [v1.0.0]
+
 ## Feat:
 
 - Se realizo configuracion de desplige en vercel | [#38](https://github.com/Talenty-Github/agencia-topty-web-landing/pull/37) | [Jayh03](https://github.com/Jayh03)

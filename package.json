@@ -33,5 +33,5 @@
 		"test": "jest",
 		"build:prod": "next lint && eslint . --fix && next build"
 	},
-	"version": "0.1.0"
+	"version": "1.0.0"
 }
