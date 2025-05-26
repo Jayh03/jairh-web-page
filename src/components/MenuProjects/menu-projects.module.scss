@@ -1,0 +1,58 @@
+@import '@/styles/globals.module';
+
+.container {
+	position: relative;
+
+	&__menu {
+		width: 100%;
+		display: flex;
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+		margin-top: 38px;
+		overflow: hidden;
+
+		&__nav {
+			overflow-x: scroll;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+			scroll-snap-type: x proximity;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
+			&__content {
+				width: 863px;
+				color: $white;
+				display: inline-flex;
+				justify-content: space-between;
+				padding: 8px;
+				background: $white;
+				border-radius: 25px;
+			}
+		}
+	}
+
+	&__pages {
+		position: relative;
+		margin-top: 32px;
+		z-index: 4;
+	}
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.container {
+		&__pages {
+			margin-top: 40px;
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.container {
+		&__pages {
+			margin-top: 56px;
+		}
+	}
+}

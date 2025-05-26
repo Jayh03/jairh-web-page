@@ -1,0 +1,8 @@
+@import '@/styles/globals.module';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	top: 0;
+}

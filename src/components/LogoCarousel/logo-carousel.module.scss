@@ -1,0 +1,47 @@
+@import '@/styles/globals.module';
+
+.container {
+	padding: 34px 0;
+
+	@keyframes slide {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-100%);
+		}
+	}
+
+	&__logos {
+		overflow: hidden;
+		white-space: nowrap;
+		position: relative;
+	}
+
+	&__logos:before,
+	&__logos:after {
+		position: absolute;
+		top: 0;
+		width: 250px;
+		height: 100%;
+		content: '';
+		z-index: 2;
+	}
+
+	&__logos:hover &__logos__slide {
+		animation-play-state: paused;
+	}
+
+	&__logos__slide {
+		display: inline-block;
+		animation: 20s slide infinite linear;
+	}
+
+	&__logos__slide {
+		img {
+			max-width: 124px;
+			height: 154px;
+			margin: 0 28px;
+		}
+	}
+}

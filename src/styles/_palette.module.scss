@@ -1,0 +1,103 @@
+// main colors
+$white: #ffffff;
+$black: #000000;
+$shark: #232323;
+$deep-cove: #07093c;
+$seagull: #58d3ff;
+$smalt: #043593;
+
+//white
+$white-50: #ffffff;
+$white-100: #efefef;
+$white-200: #dcdcdc;
+$white-300: #bdbdbd;
+$white-400: #989898;
+$white-500: #7c7c7c;
+$white-600: #656565;
+$white-700: #525252;
+$white-800: #464646;
+$white-900: #3d3d3d;
+$white-950: #292929;
+
+//black
+$black-50: #f6f6f6;
+$black-100: #e7e7e7;
+$black-200: #d1d1d1;
+$black-300: #b0b0b0;
+$black-400: #888888;
+$black-500: #6d6d6d;
+$black-600: #5d5d5d;
+$black-700: #4f4f4f;
+$black-800: #454545;
+$black-900: #3d3d3d;
+$black-950: #000000;
+
+//shark
+$shark-50: #f6f6f6;
+$shark-100: #e7e7e7;
+$shark-200: #d1d1d1;
+$shark-300: #b0b0b0;
+$shark-400: #888888;
+$shark-500: #6d6d6d;
+$shark-600: #5d5d5d;
+$shark-700: #4f4f4f;
+$shark-800: #454545;
+$shark-900: #3d3d3d;
+$shark-950: #232323;
+
+//deep cove
+$deep-cove-50: #e8f1ff;
+$deep-cove-100: #d5e5ff;
+$deep-cove-200: #b4cfff;
+$deep-cove-300: #87adff;
+$deep-cove-400: #587cff;
+$deep-cove-500: #334cff;
+$deep-cove-600: #1019ff;
+$deep-cove-700: #060cfc;
+$deep-cove-800: #0910ca;
+$deep-cove-900: #121b9d;
+$deep-cove-950: #07093c;
+
+//seagull
+$seagull-50: #f0faff;
+$seagull-100: #dff4ff;
+$seagull-200: #b8eaff;
+$seagull-300: #58d3ff;
+$seagull-400: #33cbfd;
+$seagull-500: #09b5ee;
+$seagull-600: #0091cc;
+$seagull-700: #0074a5;
+$seagull-800: #046288;
+$seagull-900: #0a5170;
+$seagull-950: #06334b;
+
+//seagull
+$smalt-50: #ebf8ff;
+$smalt-100: #d3edff;
+$smalt-200: #b0e0ff;
+$smalt-300: #7acfff;
+$smalt-400: #3cb1ff;
+$smalt-500: #0f8bff;
+$smalt-600: #0066ff;
+$smalt-700: #004eff;
+$smalt-800: #003fd1;
+$smalt-900: #043593;
+$smalt-950: #092462;
+
+// text gradient
+
+// backgroun gradient
+$background-gradient-01: radial-gradient(
+	111.48% 45.73% at 49.99% 50%,
+	rgba(88, 211, 255, 0.6) 0%,
+	rgba(78, 193, 242, 0.6) 15%,
+	rgba(53, 146, 211, 0.6) 46%,
+	rgba(14, 72, 160, 0.6) 89%,
+	rgba(4, 53, 147, 0.6) 100%
+);
+
+// Shadows
+$box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$border-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+$text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+$text-shadow-two: 0px 4px 4px rgba(0, 0, 0, 0.15);

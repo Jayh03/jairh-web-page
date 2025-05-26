@@ -1,0 +1,116 @@
+@import '@/styles/globals.module';
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:
+		linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+		url('/image/Contac.webp');
+	border-radius: 16px;
+	background-size: 928px 618px;
+	background-position-x: 40%;
+	background-position-y: 78%;
+	background-repeat: no-repeat;
+
+	&__info {
+		width: 100%;
+		padding: 48px 16px;
+		background: linear-gradient(0deg, #00000052 0%, rgba(4, 53, 147, 0) 100%);
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+		border-radius: 16px;
+
+		&__one {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+
+			h3 {
+				font-size: $font-size-28;
+				font-weight: 800;
+				color: $white;
+				text-align: left;
+			}
+			p {
+				font-size: $font-size-20;
+				font-weight: 600;
+				color: $white;
+				text-align: left;
+			}
+		}
+		&__two {
+			.button {
+				width: 314px;
+				height: 70px;
+				background-color: #156d0d;
+				padding: 16px;
+				border-radius: 16px;
+				text-decoration: none;
+				color: $white;
+				font-weight: 800;
+				font-size: 32px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 16px;
+
+				&:hover {
+					box-shadow: 0px 0px 20px 20px rgba(84, 255, 0, 0.75);
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.banner {
+		background-size: 1064px 708px;
+		background-position-x: 44%;
+		background-position-y: 32%;
+		&__info {
+			&__one {
+				width: 75%;
+				h3 {
+					font-size: 40px;
+				}
+				p {
+					font-size: $font-size-24;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $breakpoint-large-tablet) {
+	.banner {
+		background-position: 44% 66%;
+		background-size: 1360px 800px;
+		&__info {
+			&__one {
+				width: 80%;
+				h3 {
+					font-size: 40px;
+				}
+				p {
+					font-size: $font-size-24;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: $breakpoint-desktop) {
+	.banner {
+		&__info {
+			padding: 72px 36px;
+			&__one {
+				width: 80%;
+				h3 {
+					font-size: 48px;
+				}
+				p {
+					font-size: $font-size-32;
+				}
+			}
+		}
+	}
+}

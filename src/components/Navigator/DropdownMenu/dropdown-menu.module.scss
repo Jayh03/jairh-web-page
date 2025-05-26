@@ -1,0 +1,94 @@
+@import '@/styles/globals.module.scss';
+
+.container {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	margin-right: 32px;
+	gap: 12px;
+	padding: 16px 0;
+	cursor: pointer;
+
+	svg {
+		margin-left: 12px;
+		margin-top: 4px;
+	}
+}
+
+.dropdown {
+	display: flex;
+	float: left;
+	overflow: hidden;
+	z-index: 99;
+
+	.dropbtn {
+		color: $white;
+		text-decoration: none;
+		font-size: $font-size-18;
+		font-weight: $font-weight-bold;
+		letter-spacing: 0.12px;
+		transition:
+			color 0.5s ease,
+			font-weight 0.5s ease,
+			text-decoration 0.5s ease;
+		text-transform: uppercase;
+
+		&:hover {
+			//color: $seagull-300;
+			text-decoration: underline;
+		}
+	}
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+	//color: $seagull-300;
+	text-decoration: underline;
+	text-decoration: none;
+	border-radius: $border-radius-8;
+}
+
+.dropdownContent {
+	margin-top: 34px;
+	display: none;
+	position: absolute;
+	background-color: #090d1c;
+	box-shadow: 0px $spacing-8 $spacing-16 0px rgba(0, 0, 0, 0.2);
+	z-index: 3000;
+	border: 0.5px solid $white;
+	text-decoration: none;
+}
+
+.dropdownContent a {
+	float: none;
+	padding: 8px $spacing-16;
+	display: block;
+	line-height: normal;
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: none !important;
+	}
+}
+
+.dropdownContent > a:hover {
+	background-color: $white;
+	color: #090d1c;
+	text-decoration: none !important;
+}
+
+.container:hover .dropdownContent {
+	display: block;
+	position: fixed;
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.container {
+		height: 60px;
+
+		.dropdownContent {
+			margin-top: 34px;
+		}
+	}
+}

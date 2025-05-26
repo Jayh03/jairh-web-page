@@ -1,0 +1,101 @@
+@import '@/styles/globals.module';
+
+.content {
+	height: 164px;
+}
+
+.sticky {
+	width: 100%;
+	padding: 0 16px;
+	top: 0px;
+	left: 0px;
+	z-index: 2000;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	&__center {
+		width: 100%;
+		padding-right: 12px;
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #102a27;
+		border-radius: 16px;
+		box-shadow: 0px 1px 15px 15px #00ff4d73;
+	}
+
+	.shadow {
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		left: 0;
+		z-index: 19;
+		display: none;
+	}
+
+	.shadow.open {
+		display: block;
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.container {
+		&__center {
+			height: 80px;
+			&__logo {
+				gap: 24px;
+			}
+		}
+		&__menu {
+			display: flex;
+			gap: $spacing-16;
+
+			&__button {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.container {
+		&__center {
+			width: 100%;
+			max-width: 1200px;
+			&__contact {
+				display: block;
+				a {
+					width: 300px;
+					height: 53px;
+					font-size: $font-size-16;
+					text-transform: uppercase;
+				}
+			}
+		}
+		&__menu {
+			display: none;
+		}
+	}
+}
+@media screen and (min-width: $breakpoint-semilarge-desktop) {
+	.container {
+		&__center {
+			width: 100%;
+			max-width: 1360px;
+			&__contact {
+				display: block;
+				a {
+					width: 300px;
+					height: 53px;
+					font-size: $font-size-16;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+}

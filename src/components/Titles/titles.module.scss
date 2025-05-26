@@ -1,0 +1,21 @@
+@import '@/styles/globals.module';
+
+.container {
+	h2 {
+		display: inline-block;
+		color: $white;
+		font-weight: 700;
+		font-size: 32px;
+		border-bottom: 4px solid #00ff00;
+		padding-bottom: 6px;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.container {
+		h2 {
+			font-size: 40px;
+		}
+	}
+}

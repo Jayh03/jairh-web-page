@@ -1,0 +1,12 @@
+@import '@/styles/globals.module';
+
+.container {
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	line-height: 22px;
+	span {
+		color: #00ff00;
+	}
+}

@@ -1,0 +1,46 @@
+@import '@/styles/globals.module';
+
+.button {
+	width: $spacing-40;
+	height: $spacing-40;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 6px 0;
+
+	border: none;
+	box-sizing: border-box;
+	background-color: transparent;
+
+	color: $white;
+
+	cursor: pointer;
+
+	&__line {
+		width: 33px;
+		height: 3px;
+
+		border-radius: $border-radius-16;
+		background: $white;
+
+		transition: all 0.3s ease-in-out;
+	}
+}
+
+.open .button__line:nth-child(1) {
+	transition-delay: 0.1s;
+	transform: translateY(10px) rotate(45deg);
+}
+
+.open .button__line:nth-child(2) {
+	opacity: 0;
+	transform: scaleX(0);
+}
+
+.open .button__line:nth-child(3) {
+	transition-delay: 0.1s;
+	transform: translateY(-10px) rotate(-45deg);
+}

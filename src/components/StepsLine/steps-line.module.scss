@@ -1,0 +1,86 @@
+@import '@/styles/globals.module';
+
+.wrapper {
+	width: 100%;
+	padding: 16px 0;
+
+	.title {
+		font-weight: 700;
+		font-size: 24px;
+		color: $white;
+
+		margin-bottom: 32px;
+	}
+}
+
+.timeline {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	position: relative;
+	padding-top: 8px;
+	padding-left: 8px;
+	overflow-x: auto;
+	scrollbar-width: none;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 8px;
+		right: 0;
+		height: 2px;
+		background-color: #1abf5b;
+		z-index: 0;
+		width: 478px;
+	}
+}
+
+.step {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 12px;
+		left: 50%;
+		height: 4px;
+		width: 100%;
+		background-color: #1abf5b;
+		z-index: -1;
+	}
+
+	&:last-child::after {
+		display: none;
+	}
+}
+
+.circle {
+	width: 16px;
+	height: 16px;
+	background-color: #1abf5b;
+	border-radius: 50%;
+	margin-bottom: 8px;
+	box-shadow: 0 0 8px 4px rgba(26, 191, 91, 0.6);
+}
+
+.label {
+	color: white;
+	font-size: 14px;
+	white-space: nowrap;
+	z-index: 2000;
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.wrapper {
+		.title {
+			font-size: 38px;
+			margin-bottom: 70px;
+			width: 400px;
+			margin-bottom: 32px;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+@import '@/styles/globals.module';
+
+.container {
+	background: #050b10;
+	position: relative;
+
+	.aboutme {
+		position: absolute;
+		top: -100px;
+	}
+}

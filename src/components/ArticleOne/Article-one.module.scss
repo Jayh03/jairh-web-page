@@ -1,0 +1,174 @@
+@import '@/styles/globals.module';
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-color: #0a1117;
+
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+
+		.imageDesk {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: left;
+			border-radius: 16px;
+		}
+	}
+
+	&__info {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 82px;
+		padding: 46px 16px;
+		color: $white;
+
+		&__text {
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+			border-radius: 16px;
+
+			h2 {
+				font-weight: 800;
+				font-size: 32px;
+				z-index: -10;
+
+				span {
+					color: #0aff96;
+				}
+			}
+
+			strong {
+				font-size: 28px;
+			}
+
+			p {
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+
+		.link {
+			width: 186px;
+			height: 56px;
+			background-color: #112d28;
+			border-radius: 16px;
+			border: 1px solid #00ff11;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $white;
+			text-decoration: none;
+			font-weight: 700;
+			font-size: 20px;
+
+			&:hover {
+				box-shadow: 0px 0px 20px 20px rgba(84, 255, 0, 0.75);
+			}
+		}
+	}
+}
+
+.typewriter {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 2px solid #61ac8c;
+	font-family: monospace;
+	font-size: 36px;
+	width: 300px;
+	max-width: 100%;
+	animation:
+		typing 3s steps(22) 1s 1 normal both,
+		blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 300px;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.container {
+		flex-direction: row;
+		align-items: center;
+
+		&__info {
+			width: 50%;
+			gap: 70px;
+		}
+
+		&__image {
+			position: relative;
+			width: 50%;
+			height: auto;
+
+			img {
+				width: 100%;
+				height: auto;
+				margin-top: 60px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.container {
+		gap: 60px;
+		justify-content: space-between;
+
+		&__info {
+			&__text {
+				gap: 20px;
+
+				h2 {
+					font-size: 48px;
+				}
+
+				strong {
+					font-size: 32px;
+				}
+
+				p {
+					font-size: 20px;
+				}
+			}
+		}
+
+		&__image {
+			max-width: 495px;
+			max-height: 468px;
+
+			img {
+				margin-top: 0px;
+			}
+		}
+	}
+}

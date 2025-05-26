@@ -1,0 +1,15 @@
+@import '@/styles/globals.module';
+
+.container {
+	background: #050b10;
+	padding: 60px 0px 60px 0px;
+	position: relative;
+	.texts {
+		margin-top: 16px;
+		color: $white;
+	}
+	.myprojects {
+		position: absolute;
+		top: -110px;
+	}
+}

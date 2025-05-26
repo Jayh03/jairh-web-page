@@ -1,0 +1,21 @@
+@import '@/styles/globals.module';
+
+.container {
+	background: #050b10;
+	padding: 60px 0px;
+	position: relative;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+	.contact {
+		position: absolute;
+		top: -120px;
+	}
+}
+@media screen and (min-width: $breakpoint-desktop) {
+	.container {
+		padding: 74px 0px;
+	}
+}

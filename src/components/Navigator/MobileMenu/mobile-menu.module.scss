@@ -1,0 +1,70 @@
+@import '@/styles/globals.module';
+
+.container {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 320px;
+	height: 100vh;
+	background: #050b10;
+	transform: translateX(100%);
+	transition: 0.7s ease;
+	z-index: 20;
+	display: none;
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 100vh;
+		padding: 32px 0 70px 0;
+
+		.menu {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 32px;
+			padding: 0 16px;
+
+			ul {
+				width: 100%;
+				list-style: none;
+
+				li {
+					display: flex;
+					flex-direction: column;
+					border-bottom: 1px solid #00ff00;
+				}
+			}
+
+			.languages {
+				select {
+					width: 100%;
+				}
+			}
+
+			.appointmen {
+				width: 100%;
+				a {
+					width: 100%;
+					height: 53px;
+				}
+			}
+		}
+
+		button {
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			border: none;
+		}
+	}
+}
+
+.container.open {
+	display: inline;
+	transform: translateX(0);
+}

@@ -1,0 +1,18 @@
+@import '@/styles/globals.module';
+
+.button {
+	width: 100%;
+	height: $spacing-48;
+	border: 1px solid #23ff07;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: $spacing-8;
+	padding: 4px 24px;
+	background-color: transparent;
+	border-radius: 24px;
+	color: $white;
+	font-size: $font-size-18;
+	font-weight: $font-weight-medium;
+	text-decoration: none;
+}

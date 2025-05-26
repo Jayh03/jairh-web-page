@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jair Henriquez
 
-## Getting Started
+Jair Henriquez UI es un proyecto diseñado para proporcionar una interfaz de usuario amigable para Jair Henriquez como empresa.
 
-First, run the development server:
+## Ejecutar el Proyecto de Forma Local
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Para ejecutar este proyecto en tu máquina local, sigue estos pasos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clona el repositorio del proyecto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   git clone [git@github.com:/Jayh03/jairh-web-page.git]
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Ve al directorio del proyecto:
 
-## Learn More
+   ```bash
+   cd js-web-page
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Instala las dependencias del proyecto:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Inicia el servidor de desarrollo:
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Variables de Entorno
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `NEXT_PUBLIC_GOOGLE_ANALYTICS`: Clave de seguimiento para [Google Analytics](https://analytics.google.com/analytics/web/).
+- `NEXT_PUBLIC_CLARITY_ANALYTICS`: Clave de seguimiento para **Clarity Analytics**.
+
+## Secrets de GitHub
+
+- `VERCEL_ORG_ID`: Identificación de la organización o [usuario en Vercel](https://vercel.com/account).
+- `VERCEL_PROJECT_ID`: Identificación del [proyecto en Vercel](https://vercel.com/tu-usuario-de-vercel/jairh-web-page/settings).
+- `VERCEL_GITHUB_TOKEN`: [Token generado en Vercel](https://vercel.com/account/tokens) para GitHub, basado en el usuario.
+
+## Tecnologías Utilizadas
+
+- **Cliente:** TypeScript, React, Next.js
+- **Cloud:** Firebase, Psicotips Platform (PP)
+
+## Soporte
+
+Para obtener soporte e información, contáctanos en [jhenriquezpallares@gmail.com](mailto:jhenriquezpallares@gmail.com) o comunícate a través de nuestros canales de soporte dedicados.
+
+## Autores
+
+- [JairHenriquez](https://jairhenriquez.com/)
+
+## Licencia
+
+Este proyecto está bajo la licencia [LICENCIA DE Jair Henriquez]. Consulta el archivo [LICENSE.md](LICENSE.md) en el repositorio del proyecto para obtener más detalles.

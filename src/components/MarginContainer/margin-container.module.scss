@@ -1,0 +1,46 @@
+@import '@/styles/globals.module.scss';
+
+.marginContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&__main {
+		width: 100%;
+		padding: 0 16px;
+	}
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.marginContainer {
+		&__main {
+			padding: 0 24px;
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-large-tablet) {
+	.marginContainer {
+		&__main {
+			padding: 0 32px;
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.marginContainer {
+		&__main {
+			padding: 0;
+			max-width: 1200px;
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-semilarge-desktop) {
+	.marginContainer {
+		&__main {
+			max-width: 1360px;
+		}
+	}
+}

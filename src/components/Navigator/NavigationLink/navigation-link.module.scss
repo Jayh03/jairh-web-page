@@ -1,0 +1,20 @@
+@import '@/styles/globals.module';
+
+.link {
+	color: $white;
+	font-size: 18px;
+	font-weight: $font-weight-bold;
+	text-decoration: none;
+	line-height: 40px;
+
+	&:hover {
+		color: rgb(123, 255, 0);
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.link {
+		line-height: 60px;
+		text-transform: uppercase;
+	}
+}

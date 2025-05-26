@@ -1,0 +1,732 @@
+{
+	"Page": {
+		"language": "es"
+	},
+	"LocaleSwitcher": {
+		"label": "Change language",
+		"locale": "{locale, select, es {ES} en {EN} other {Unknown}}"
+	},
+	"Navigation": {
+		"appointmentScheduler": "Solicita tu asesoría",
+		"home": "Inicio",
+		"services": "Servicios",
+		"infrastructure": "Infrastructura",
+		"telecommunications": "Telecomunicaciones",
+		"cybersecurity": "Ciberseguridad",
+		"aboutUs": "Nosotros",
+		"contact": "Contacto",
+		"FAQs": "FAQs"
+	},
+	"Information": {
+		"greeting": "Soluciones Tecnológicas para Pequeñas y Medianas Empresas",
+		"language": "es",
+		"info": "MUY PRONTO"
+	},
+	"Metadata": {
+		"tilte": "Planet Ip - Próxiamente: Soluciones Tecnológicas para Pequeñas y Medianas Empresas",
+		"description": "Infraestructura, Comunicaciones y Ciberseguridad adaptadas a tus necesidades en Estados Unidos y en Latinoamérica."
+	},
+	"InformationMain": {
+		"title": "Soluciones Tecnológicas para Pequeñas y Medianas Empresas",
+		"description": "Infraestructura, Comunicaciones y Ciberseguridad adaptadas a tus necesidades en Estados Unidos y en Latinoamérica.",
+		"buttonOne": "Descubre más",
+		"buttonTwo": "solicita tu asesoría"
+	},
+	"InformationMaincards": {
+		"one": "Años de experiencia",
+		"two": "Clientes satisfechos",
+		"three": "Países",
+		"four": "Soporte continuo"
+	},
+	"InformativeMenu": {
+		"socialMedia": "Siguenos en:",
+		"info": "Lun - Dom de 9:00am a 5:00pm"
+	},
+	"AboutUs": {
+		"titleSection": "Sobre nosotros",
+		"title": "Nuestro Objetivo es Simplificar la Implementación de Tecnología Avanzada para Nuestros Clientes",
+		"description": "Ofrecemos herramientas escalables que les permiten mejorar su infraestructura, comunicaciones y seguridad sin complicaciones. Acompañamos a cada cliente con asesoría y soporte continuo, asegurándonos de que puedan maximizar su valor",
+		"altImage": "imagen",
+		"titleCardOne": "Soluciones escalables",
+		"descriptionCardOne": "Adaptamos nuestras ofertas para crecer junto a las necesidades de cada cliente.",
+		"titleCardTwo": "Asesoría personalizada",
+		"descriptionCardTwo": "Proveemos consultoría especializada desde el diagnóstico inicial hasta la implementación.",
+		"titleCardThree": "Optimización de costos",
+		"descriptionCardThree": "Brindamos tecnología avanzada a precios competitivos, ideal para empresas con presupuestos limitados.",
+		"titleCardFour": "Soporte continuo",
+		"descriptionCardFour": "Acompañamos a nuestros clientes con soporte técnico disponible en todo momento."
+	},
+	"AboutUsServices": {
+		"service01": "*Servidores on-Premise (Locales)*",
+		"service02": "*Datacenters (Privados y Públicos)*",
+		"service03": "*Almacenamiento (Storage) y Backup  (On-premise y Cloud)*",
+		"service04": "*Firewalls*",
+		"service05": "*Implementación de Microsoft 365*",
+		"service06": "*Canales de Comunicación y SD-WAN*",
+		"service07": "*SIP Trunks, MPLS y Conexiones VPN*",
+		"service08": "*Telefonía AVAYA y 3CX (On-Premise o Cloud)*",
+		"service09": "*Conexiones Seguras Site-to-Site*",
+		"service10": "*FTP Sites*",
+		"service11": "*Protección de Endpoints*",
+		"service12": "*Planes de Recuperación ante Desastres (DRP)*",
+		"service13": "*Monitoreo y Detección de Amenazas (MDR)*",
+		"service14": "*Conexiones Remotas Seguras (SASE)*"
+	},
+	"OurServices": {
+		"titleSection": "Nuestros servicios",
+		"title": "Soluciones Seguras y Escalables Adaptadas a tus Necesidades",
+		"button": "Estoy interesado",
+		"buttonCard": "Leer más",
+		"titleOne": "Infraestructura",
+		"descriptionOne": "Diseñamos e implementamos servidores, backups y almacenamiento, tanto en la nube como en local, garantizando la continuidad operativa de tu empresa.",
+		"titleTwo": "Telecomunicaciones",
+		"descriptionTwo": "Ofrecemos soluciones de conectividad como SD-WAN, telefonía en la nube y VPN, optimizando las comunicaciones y reduciendo costos operativos.",
+		"titleThree": "Ciberseguridad",
+		"descriptionThree": "Protegemos tus datos y sistemas con antivirus, monitoreo constante y conexiones seguras para evitar amenazas y asegurar la integridad de tu empresa."
+	},
+	"Benefits": {
+		"titleSection": "Beneficios",
+		"title": "Impulsa tu Empresa con Soluciones que Marcan la Diferencia",
+		"title01": "Soluciones asequibles y adaptadas a tu empresa",
+		"description01": "Ofrecemos servicios flexibles y personalizados, diseñados específicamente para ajustarse a las necesidades únicas y al presupuesto de cada cliente. Nuestro objetivo es garantizar una solución que maximice el valor sin comprometer la calidad.",
+		"title02": "Tecnología avanzada y fácil de implementar",
+		"description02": "Implementamos las últimas herramientas tecnológicas de vanguardia que, además de ser altamente efectivas, son fáciles de integrar en tus operaciones diarias, permitiendo una transición rápida y sin complicaciones.",
+		"title03": "Protección total de datos y comunicaciones",
+		"description03": "Garantizamos la seguridad de tu negocio con soluciones de ciberseguridad de última generación, protegiendo tus datos y comunicaciones de amenazas y asegurando un entorno digital completamente seguro.",
+		"title04": "Equipo de profesionales con experiencia",
+		"description04": "Contamos con un equipo multidisciplinario de expertos en infraestructura, comunicaciones y ciberseguridad, que acumula años de experiencia comprobada en ayudar a empresas a alcanzar sus objetivos tecnológicos.",
+		"title05": "Servicios asequibles para optimizar tu inversión",
+		"description05": "Nuestras soluciones están diseñadas para ofrecer el mejor retorno sobre la inversión, optimizando recursos y asegurando que obtengas el máximo beneficio de tus iniciativas tecnológicas sin exceder tu presupuesto.",
+		"titleBanner": "Soluciones Integrales en Infraestructura, Telecomunicaciones y Ciberseguridad",
+		"descriptionBanner": "Optimiza tu negocio con soluciones completas que cubren cada aspecto tecnológico. Desde la infraestructura hasta la seguridad, te ofrecemos todo lo que necesitas para operar de manera eficiente y segura.",
+		"buttonBanner": "Descubre Cómo Transformar tu Empresa",
+		"titleCarousel": "Nuestros partners"
+	},
+	"Contact": {
+		"titleSection": "Contacto",
+		"title": "Contáctanos y Descubre Cómo Podemos Ayudar a tu Empresa",
+		"description": "En Planet IP, estamos listos para brindarte soluciones tecnológicas adaptadas a tus necesidades. Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.",
+		"name": "Nombre completo*",
+		"placeholderName": "Nombres y Apellidos",
+		"email": "Correo electrónico*",
+		"placeholderEmail": "Tu correo eléctrónico",
+		"phone": "Teléfono*",
+		"placeholderPhone": "Tu número de contacto",
+		"company": "Empresa*",
+		"placeholderCompany": "Nombre de tu empresa",
+		"service": "Servicio de interés*",
+		"placeholderService": "Servicio en el que estás interesado",
+		"service01": "Infraestructura",
+		"service02": "Telecomunicaciones",
+		"service03": "Ciberseguridad",
+		"message": "Mensaje*",
+		"placeholderMessage": "Cuéntanos más sobre cómo podemos ayudarte",
+		"textButtonOne": "Enviar consulta",
+		"textButtonTwo": "Enviando información"
+	},
+	"Footer": {
+		"socialMedia": "Sígenos en:",
+		"services": "Servicios",
+		"service01": "Infraestructura",
+		"service02": "Telecomunicaciones",
+		"service03": "Ciberseguridad",
+		"company": "Planet IP",
+		"aboutUs01": "Sobre nosotros",
+		"aboutUs02": "Información de Contacto",
+		"aboutUs03": "Blog",
+		"legal": "Legal",
+		"legal01": "Preguntas frecuentes",
+		"legal02": "Terminos y condiciones",
+		"legal03": "Política de privacidad",
+		"copyrighht01": "© Copyright ",
+		"copyrighht01-5": " - Planet IP",
+		"copyrighht02": " | Página creada y administrada por Agencia Topty®"
+	},
+	"Infrastructure": {
+		"ArticleMain": {
+			"title": "Soluciones Integrales en ",
+			"strongTitle": "Infraestructura",
+			"description": "En Planet IP, te ofrecemos soluciones tecnológicas escalables que garantizan la continuidad y seguridad de tus operaciones. Desde servidores hasta sistemas de almacenamiento y respaldo de datos, adaptamos nuestras soluciones a las necesidades y presupuesto de tu empresa, asegurando un entorno tecnológico eficiente y robusto.",
+			"info": "Optimizamos y escalamos tu infraestructura tecnológica para garantizar la continuidad y eficiencia de tus operaciones. ¿Listo para impulsar tu negocio?",
+			"textButtonOne": "Solicita Asesoría Personalizada",
+			"textbuttonTwo": "Quiero que me contacten"
+		},
+		"Services": {
+			"title": "Servicios",
+			"strongTitle": "Soluciones Esenciales para una Infraestructura Tecnológica Robusta",
+			"titleCarousel": "Nuestros partners",
+			"titleBanner": "¿Listo para Optimizar la Tecnología de tu Empresa?",
+			"descriptionBanner": "Contáctanos hoy mismo y recibe una consulta personalizada sobre cómo nuestras soluciones pueden transformar tu infraestructura, comunicaciones y seguridad.",
+			"buttonBanner": "HABLA CON NUESTROS EXPERTOS",
+			"On-Premise-Servers": {
+				"category": "Servidores On-primese",
+				"title": "On-Premise Servers (Local)",
+				"subTitle": "Control Total y Seguridad para tu Empresa",
+				"descriptionOne": "En Planet IP, te ofrecemos soluciones de servidores On-Premise diseñadas para proporcionarte el máximo control y seguridad sobre tus datos y aplicaciones. Esta opción es estándar para muchas empresas, ya sean pequeñas, medianas o grandes, y representa una excelente alternativa cuando se cuenta con los recursos adecuados. Es esencial disponer de un espacio físico adecuado, personal calificado para su administración y un presupuesto para el mantenimiento y crecimiento continuo.",
+				"descriptionTwo": "Al implementar servidores locales en tu empresa, puedes gestionar directamente tus recursos tecnológicos, asegurando que la información crítica nunca salga de tus instalaciones. En Planet IP, diseñamos centros de datos locales que se ajustan a las necesidades específicas de tu negocio, garantizando una configuración que incluye la seguridad, la ubicación adecuada y un plan de mantenimiento completo que abarca actualizaciones de software, hardware y licencias.",
+				"descriptionThree": "Con nuestros servidores On-Premise, proporcionamos estabilidad, velocidad y escalabilidad, todo mientras te acompañamos en cada etapa, desde la implementación hasta el soporte continuo.",
+				"infoTitle01": "Control total ",
+				"info01": "sobre tus datos y aplicaciones sin depender de terceros.",
+				"infoTitle02": "Máxima seguridad",
+				"info02": ", manteniendo la información crítica dentro de tus instalaciones.",
+				"infoTitle03": "Personalización ",
+				"info03": "para adaptar los servidores a las necesidades específicas de tu empresa.",
+				"infoTitle04": "Alta disponibilidad y rendimiento ",
+				"info04": "para garantizar operaciones continuas y eficientes.",
+				"infoTitle05": "Escalabilidad ",
+				"info05": "que permite ajustar los recursos a medida que tu negocio crece.",
+				"infoTitle06": "Soporte especializado ",
+				"info06": "desde la implementación hasta el mantenimiento continuo."
+			},
+			"Datacenters": {
+				"category": "Datacenters",
+				"title": "Datacenters (Privados y Públicos)",
+				"subTitle": "Flexibilidad y Escalabilidad para tu Empresa",
+				"descriptionOne": "En Planet IP, ofrecemos soluciones de datacenters privados y públicos para aquellas empresas que no desean gestionar centros de datos locales o no cuentan con personal calificado para mantenerlos. Esta opción es ideal para negocios que prefieren externalizar la gestión de su infraestructura tecnológica, sin comprometer la seguridad o el rendimiento. Los datacenters en la nube proporcionan una alternativa flexible y escalable que se ajusta a las necesidades de tu empresa, eliminando la necesidad de contar con espacios físicos o realizar grandes inversiones iniciales en equipos.",
+				"descriptionTwo": "Nos especializamos en evaluar tus necesidades y ofrecer una solución equilibrada entre nube pública y nube privada, adaptada a los objetivos de tu empresa. Esta decisión no requiere un conocimiento técnico avanzado, sino una evaluación financiera que te ayude a determinar cuál es la opción más rentable y adecuada para tu negocio. Ya sea que optes por un datacenter privado o público, garantizamos que tus datos estarán siempre seguros y accesibles, con un nivel de servicio que se adapta a las demandas de tu operación.",
+				"descriptionThree": "Con nuestros datacenters privados y públicos, te proporcionamos la flexibilidad necesaria para escalar tu infraestructura a medida que crece tu negocio, mientras te ofrecemos soporte continuo en todas las etapas del proceso.",
+				"infoTitle01": "Flexibilidad y escalabilidad ",
+				"info01": "que se adaptan a las necesidades cambiantes de tu empresa.",
+				"infoTitle02": "Externalización completa, ",
+				"info02": "sin necesidad de gestionar o mantener centros de datos locales.",
+				"infoTitle03": "Opciones personalizadas ",
+				"info03": "entre nube pública y privada, según los requerimientos financieros de tu negocio.",
+				"infoTitle04": "Alta disponibilidad ",
+				"info04": "para garantizar el acceso a tus datos y aplicaciones en todo momento.",
+				"infoTitle05": "Reducción de costos iniciales ",
+				"info05": "al no necesitar grandes inversiones en infraestructura física.",
+				"infoTitle06": "Soporte especializado ",
+				"info06": "desde la implementación hasta el mantenimiento continuo."
+			},
+			"Storage-and-Backup-Systems": {
+				"category": "Sistemas de almacenamiento y backup",
+				"title": "Sistemas de almacenamiento y backup",
+				"subTitle": "Protección y Disponibilidad para tus Datos",
+				"descriptionOne": "En Planet IP, ofrecemos soluciones de almacenamiento y backup diseñadas para proteger los datos críticos de tu empresa. La pérdida de información puede tener un impacto significativo en la continuidad de tu negocio, por lo que es crucial contar con un sistema de almacenamiento y respaldo confiable. Nuestro enfoque se adapta a tu presupuesto y a la importancia que le das a la protección de tus datos, asegurando que siempre estén disponibles cuando los necesites.",
+				"descriptionTwo": "Dependiendo de tus necesidades y recursos, te ayudamos a elegir entre opciones On-Premise (NAS o SAN) o en la nube (privada o pública). Estos sistemas ofrecen flexibilidad, seguridad y la tranquilidad de que tus datos están resguardados, sin importar el escenario. La recuperación de información es vital para la supervivencia de cualquier negocio, y en Planet IP, diseñamos soluciones que minimizan los tiempos de recuperación y garantizan la continuidad de tus operaciones.",
+				"descriptionThree": "Con nuestras soluciones de almacenamiento y backup, proporcionamos estabilidad y acceso constante a tus datos, asegurando que tu empresa esté preparada para cualquier eventualidad.",
+				"infoTitle01": "Protección completa ",
+				"info01": "de tus datos, tanto en sistemas locales como en la nube.",
+				"infoTitle02": "Opciones de almacenamiento flexibles ",
+				"info02": "adaptadas a tu presupuesto y necesidades.",
+				"infoTitle03": "Backup seguro ",
+				"info03": "que garantiza la recuperación de tus datos en caso de pérdida.",
+				"infoTitle04": "Alta disponibilidad ",
+				"info04": "para asegurar que tus datos estén siempre accesibles.",
+				"infoTitle05": "Reducción de tiempos de recuperación, ",
+				"info05": "minimizando el impacto en tus operaciones.",
+				"infoTitle06": "Soporte especializado ",
+				"info06": "desde la implementación hasta el mantenimiento continuo."
+			},
+			"Firewalls": {
+				"category": "Firewalls",
+				"title": "Firewalls",
+				"subTitle": "Protección Avanzada para tu Infraestructura",
+				"descriptionOne": "Los firewalls son una pieza fundamental en cualquier centro de datos, ya que actúan como la primera línea de defensa para proteger tu infraestructura. En Planet IP, ofrecemos soluciones de firewalls diseñadas para gestionar el tráfico de datos entre tus servicios internos y el acceso externo a internet, asegurando que los flujos de información sean seguros y controlados. Estos dispositivos no solo protegen tu red, sino que también monitorean y registran el tráfico para identificar posibles amenazas antes de que puedan causar daños.",
+				"descriptionTwo": "Nuestros firewalls están diseñados para ajustarse a tu presupuesto, ofreciendo niveles de protección que van desde configuraciones básicas hasta soluciones más avanzadas que incluyen inteligencia artificial para la identificación temprana de riesgos. Estas soluciones permiten una administración granular de tu red, lo que te ayuda a prevenir ataques, bloquear accesos no deseados desde países de alto riesgo y limitar el acceso a recursos internos de forma segura. Los firewalls son clave para detener intentos de intrusión de hackers que buscan vulnerabilidades para robar o dañar tus datos.",
+				"descriptionThree": "Con nuestros firewalls, te proporcionamos una solución robusta que mantiene tu infraestructura segura, monitoreada y protegida frente a las amenazas más avanzadas.",
+				"infoTitle01": "Protección integral ",
+				"info01": "para controlar el tráfico entre tu red interna y el internet.",
+				"infoTitle02": "Prevención de ataques futuros, ",
+				"info02": "con herramientas que bloquean accesos no autorizados.",
+				"infoTitle03": "Monitoreo continuo ",
+				"info03": "del tráfico de red para identificar y registrar amenazas.",
+				"infoTitle04": "Administración granular ",
+				"info04": "que permite gestionar el acceso a recursos internos de forma segura.",
+				"infoTitle05": "Inteligencia artificial avanzada ",
+				"info05": "para identificar y responder rápidamente a riesgos potenciales.",
+				"infoTitle06": "Soluciones ajustadas a tu presupuesto, ",
+				"info06": "desde configuraciones básicas hasta opciones de alta seguridad."
+			},
+			"Microsoft-365-Implementation": {
+				"category": "Implementación de microsoft 365",
+				"title": "Implementación de Microsoft 365",
+				"subTitle": "Optimización y Gestión Eficiente para tu Empresa",
+				"descriptionOne": "En Planet IP, te ayudamos a implementar y gestionar Microsoft 365, una plataforma esencial para la colaboración y productividad de tu empresa. Aunque Microsoft 365 es una herramienta poderosa y fácil de usar, muchas empresas no están familiarizadas con las mejores prácticas para su correcta implementación. Nuestra asesoría cubre todos los aspectos necesarios para que puedas aprovechar al máximo esta plataforma, desde la creación de usuarios hasta la asignación de licencias y la activación de la autenticación multifactor (MFA).",
+				"descriptionTwo": "Además, te guiamos en la organización de tus equipos mediante Microsoft Teams, la gestión de archivos en OneDrive, y la creación de espacios de trabajo colaborativos en SharePoint. Sabemos que compartir archivos sin enviarlos es clave para la eficiencia, y con Planet IP, te aseguramos que cada función de Microsoft 365 esté configurada de manera óptima para adaptarse a las necesidades de tu negocio. A pesar de que Microsoft te ofrece la herramienta, la administración correcta es clave para garantizar su buen funcionamiento, y ahí es donde entramos nosotros.",
+				"descriptionThree": "Con nuestra implementación de Microsoft 365, te proporcionamos el soporte necesario para que toda tu infraestructura digital esté bien organizada, segura y funcionando a su máximo potencial.",
+				"infoTitle01": "Configuración completa ",
+				"info01": "de usuarios y asignación de licencias para tu equipo.",
+				"infoTitle02": "Activación de MFA ",
+				"info02": "para añadir una capa adicional de seguridad a tus cuentas.",
+				"infoTitle03": "Optimización de Microsoft Teams ",
+				"info03": "para mejorar la comunicación y colaboración en tu empresa.",
+				"infoTitle04": "Gestión eficiente de archivos ",
+				"info04": "en OneDrive y creación de espacios de trabajo en SharePoint.",
+				"infoTitle05": "Aprovechamiento total ",
+				"info05": "de las herramientas de Microsoft 365 para maximizar la productividad.",
+				"infoTitle06": "Soporte especializado ",
+				"info06": "para garantizar una administración eficiente y segura de la plataforma."
+			}
+		},
+		"Faqs": {
+			"title": "FAQs",
+			"strongTitle": "Preguntas Frecuentes sobre Nuestras Soluciones de Infraestructura",
+			"infoTitle01": "¿Cuál es el proceso de implementación de los servicios de infraestructura?",
+			"info01": "Empezamos con una evaluación de las necesidades tecnológicas de tu empresa, seguido de la planificación e implementación de soluciones personalizadas. Nuestro equipo de expertos se encarga de todo el proceso, asegurando que tu infraestructura esté optimizada y funcionando.",
+			"infoTitle02": "¿Cómo aseguran la protección de mis datos y todas mis comunicaciones?",
+			"info02": "Utilizamos tecnologías avanzadas de ciberseguridad, incluyendo firewalls, sistemas de monitoreo y protección de endpoints, para garantizar que tus datos estén seguros tanto dentro de tu red como en comunicaciones externas. También ofrecemos soluciones de respaldo y recuperación ante desastres.",
+			"infoTitle03": "¿Cuáles son las ventajas de tener servidores On-Premise frente a soluciones en la nube?",
+			"info03": "Los servidores On-Premise te ofrecen un mayor control y seguridad sobre tus datos, ya que todo se gestiona dentro de tu empresa. Esto es ideal para empresas que manejan información sensible o requieren personalización avanzada. Sin embargo, las soluciones en la nube ofrecen flexibilidad.",
+			"infoTitle04": "¿Qué tipo de empresas pueden beneficiarse de los servicios de Planet IP?",
+			"info04": "En Planet IP, trabajamos principalmente con pequeñas y medianas empresas que buscan optimizar su infraestructura tecnológica, mejorar sus comunicaciones y garantizar la seguridad de sus datos. Adaptamos nuestras soluciones a las necesidades y presupuestos de cada cliente.",
+			"infoTitle05": "¿Cómo puedo saber cuál es la mejor solución para mi empresa?",
+			"info05": "Te invitamos a contactarnos para recibir una consulta gratuita. Analizaremos las necesidades específicas de tu empresa y te recomendaremos las soluciones más adecuadas en infraestructura, comunicaciones o ciberseguridad.",
+			"infoTitle06": "¿Ofrecen soporte técnico después de la implementación de la infraestructura?",
+			"info06": "Sí, proporcionamos soporte técnico 24/7 para todos nuestros clientes. Nuestro equipo está disponible para ayudarte en cualquier momento, y con cualquier tema, ya sea relacionado a problemas técnicos o consultas referentes a tus sistemas adquiridos con Planet IP."
+		}
+	},
+	"TermsConditions": {
+		"title": "Términos y condiciones",
+		"strongTitle": "Bienvenido a Planet IP",
+		"description": "Estos Términos y Condiciones regulan el uso de nuestro sitio web y los servicios ofrecidos por nuestra empresa. Al acceder y utilizar este sitio, aceptas cumplir con estos términos en su totalidad. Si no estás de acuerdo con algún término, te pedimos que no utilices nuestros servicios.",
+		"spots": {
+			"spots01": {
+				"strongTitle": "1. Aceptación de los Términos",
+				"description": "Al acceder y utilizar este sitio web, estás aceptando cumplir y estar sujeto a los siguientes términos y condiciones, que regulan el uso del sitio y los servicios ofrecidos por Planet IP. Si no estás de acuerdo con estos términos, te pedimos que no utilices este sitio."
+			},
+			"spots02": {
+				"strongTitle": "2. Definiciones",
+				"infoTitle01": "Planet IP: ",
+				"info01": "Se refiere a la empresa y sus servicios relacionados con infraestructura, comunicaciones y ciberseguridad.",
+				"infoTitle02": "Usuario: ",
+				"info02": "Cualquier persona que accede o utiliza el sitio web o los servicios de Planet IP.",
+				"infoTitle03": "Servicios: ",
+				"info03": "Los productos, soluciones y servicios ofrecidos por Planet IP."
+			},
+			"spots03": {
+				"strongTitle": "3. Uso del Sitio Web",
+				"description": "El acceso y uso de este sitio web están sujetos a las siguientes condiciones:",
+				"info01": "El contenido del sitio es solo para uso informativo y comercial.",
+				"info02": "No puedes utilizar el contenido de este sitio con fines ilícitos, dañinos o fraudulentos.",
+				"info03": "Planet IP se reserva el derecho de modificar el contenido del sitio en cualquier momento sin previo aviso."
+			},
+			"spots04": {
+				"strongTitle": "4. Servicios de Planet IP",
+				"info01": "Los servicios de Planet IP están sujetos a los acuerdos específicos entre el cliente y la empresa.",
+				"info02": "Las características y precios de los servicios pueden variar, y la empresa se reserva el derecho de realizar modificaciones sin previo aviso.",
+				"info03": "Los detalles específicos sobre los servicios contratados se detallarán en los contratos o acuerdos de servicio correspondientes."
+			},
+			"spots05": {
+				"strongTitle": "5. Propiedad Intelectual",
+				"info01": "Todos los derechos de propiedad intelectual sobre el contenido, las marcas, el logotipo, el diseño y otros elementos del sitio pertenecen a Planet IP o a sus licenciantes.",
+				"info02": "No está permitido copiar, reproducir, distribuir, modificar o utilizar cualquier contenido de este sitio sin autorización previa por escrito."
+			},
+			"spots06": {
+				"strongTitle": "6. Protección de Datos y Privacidad",
+				"info01": "Planet IP se compromete a proteger la privacidad de los usuarios. Cualquier dato personal proporcionado se gestionará de acuerdo con nuestra Política de Privacidad, que puedes consultar en el enlace correspondiente. Al utilizar este sitio, aceptas nuestras políticas de privacidad."
+			},
+			"spots07": {
+				"strongTitle": "7. Limitación de Responsabilidad",
+				"description": "Planet IP no será responsable de:",
+				"info01": "Cualquier daño directo, indirecto, incidental o consecuente derivado del uso de este sitio o los servicios.",
+				"info02": "La disponibilidad o exactitud del contenido en sitios web de terceros que puedan estar vinculados desde este sitio."
+			},
+			"spots08": {
+				"strongTitle": "8. Modificaciones a los Términos",
+				"description": "Planet IP se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Te recomendamos que revises periódicamente esta página para estar al tanto de cualquier actualización."
+			},
+			"spots09": {
+				"strongTitle": "9. Legislación Aplicable",
+				"description": "Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes de los Estados Unidos, y cualquier disputa estará sujeta a la jurisdicción de los tribunales correspondientes."
+			},
+			"spots10": {
+				"strongTitle": "10. Contacto",
+				"description": "Si tienes alguna pregunta sobre estos términos y condiciones, por favor contáctanos a través de [correo electrónico o teléfono]."
+			}
+		}
+	},
+	"PrivacyPolicy": {
+		"title": "Política de privacidad"
+	},
+	"Telecommunications": {
+		"ArticleMain": {
+			"title": "Soluciones Integrales en ",
+			"strongTitle": "Telecomunicaciones",
+			"description": "En Planet IP, te ofrecemos soluciones de telecomunicaciones adaptadas a las necesidades de tu negocio, asegurando siempre la redundancia y escalabilidad de tus canales de comunicación. Desde proveedores de internet hasta sistemas de telefonía IP, nuestras soluciones están diseñadas para optimizar la conexión y eficiencia de tus operaciones, garantizando que tus empleados y clientes se mantengan siempre conectados.",
+			"info": "Optimizamos tu conectividad para que tus comunicaciones sean estables y eficientes. Con anchos de banda robustos y herramientas avanzadas, te ayudamos a impulsar tu negocio. ¿Listo para mejorar tu conexión?",
+			"textButtonOne": "Solicita Asesoría Personalizada",
+			"textbuttonTwo": "Quiero que me contacten"
+		},
+		"Services": {
+			"title": "Servicios",
+			"strongTitle": "Servicios Especializados para una Conectividad Integral",
+			"titleCarousel": "Nuestros partners",
+			"titleBanner": "¿Listo para Optimizar la Tecnología de tu Empresa?",
+			"descriptionBanner": "Contáctanos hoy mismo y recibe una consulta personalizada sobre cómo nuestras soluciones pueden transformar tu infraestructura, comunicaciones y seguridad.",
+			"buttonBanner": "HABLA CON NUESTROS EXPERTOS",
+			"On-Premise-Servers": {
+				"category": "Canales de comunicación y SD-WAN",
+				"title": "Canales de Comunicación y SD-WAN",
+				"subTitle": "Conectividad Confiable y Flexible para tu Negocio",
+				"descriptionOne": "En Planet IP, ofrecemos soluciones de canales de comunicación y SD-WAN para asegurar una conectividad estable y segura en tu empresa. Hoy en día, los negocios dependen completamente del internet, por lo que es fundamental contar con proveedores confiables que ofrezcan altos niveles de SLA. Adaptamos nuestras recomendaciones según el área de operación de tu negocio, el ancho de banda requerido y los tiempos de respuesta que esperas de cada canal.",
+				"descriptionTwo": "Nuestro enfoque incluye la implementación de dos canales de comunicación de diferentes proveedores, donde uno actúa como principal y el otro como respaldo. Así, garantizamos que tu negocio mantenga la conectividad incluso si uno de los canales experimenta problemas. Además, con SD-WAN, simplificamos el acceso seguro a aplicaciones en la nube, como Microsoft 365 y servidores en la nube, optimizando la gestión y seguridad de tus conexiones.",
+				"descriptionThree": "Con nuestras soluciones de comunicación y SD-WAN, proporcionamos flexibilidad y seguridad, adaptando cada implementación a las necesidades específicas de tu negocio.",
+				"infoTitle01": "Conectividad estable ",
+				"info01": "para mantener la operatividad de tu empresa sin interrupciones.",
+				"infoTitle02": "Alta disponibilidad, ",
+				"info02": " con dos canales de comunicación para asegurar la continuidad de tu negocio.",
+				"infoTitle03": "Adaptación al ancho de banda ",
+				"info03": "requerido para garantizar eficiencia y escalabilidad.",
+				"infoTitle04": "SD-WAN simplificado ",
+				"info04": "para un acceso seguro y flexible a aplicaciones en la nube.",
+				"infoTitle05": "Protección avanzada ",
+				"info05": "con arquitectura SASE y “Zero Trust” para mitigar riesgos de seguridad.",
+				"infoTitle06": "Soporte especializado ",
+				"info06": "para adaptar cada solución a las necesidades de tu empresa."
+			},
+			"Datacenters": {
+				"category": "Sip Trunks - MPLs - VPN Conecctions",
+				"title": "SIP Trunks, MPLS y Conexiones VPN",
+				"subTitle": "Comunicación Eficiente y Conexiones Seguras para tu Empresa",
+				"descriptionOne": "En Planet IP, ofrecemos servicios de SIP Trunks, MPLS y VPN para garantizar una comunicación efectiva y segura en tu empresa. Los SIP Trunks permiten contar con líneas telefónicas locales, facilitando la comunicación con el exterior mediante números locales y servicios adicionales como fax a correo electrónico y sistemas PBX, todo adaptado a las necesidades específicas de tu negocio.",
+				"descriptionTwo": "Para empresas con múltiples sucursales, las MPLS son esenciales para compartir servicios y aplicaciones en una red privada segura, donde los datos solo son visibles para los empleados autorizados, sin importar su ubicación. Las conexiones VPN son una alternativa más económica que las MPLS, permitiendo conectar oficinas y empleados remotos de manera segura, sin depender de un proveedor de internet dedicado.",
+				"descriptionThree": "Con nuestras soluciones de SIP Trunks, MPLS y VPN, aseguramos que tu empresa cuente con herramientas de comunicación y conexión efectivas y adaptadas a tus necesidades.",
+				"infoTitle01": "SIP Trunks ",
+				"info01": "para obtener líneas locales y facilitar la comunicación externa.",
+				"infoTitle02": "Números y servicios locales, ",
+				"info02": " como fax a email y sistemas PBX personalizados.",
+				"infoTitle03": "Red privada MPLS ",
+				"info03": "que conecta tus sucursales con máxima seguridad.",
+				"infoTitle04": "Conexiones VPN económicas ",
+				"info04": "para empleados remotos y oficinas sin proveedor dedicado.",
+				"infoTitle05": "Adaptación personalizada ",
+				"info05": "de cada servicio para cubrir las necesidades de tu empresa.",
+				"infoTitle06": "Soporte especializado ",
+				"info06": "desde la implementación hasta el mantenimiento continuo."
+			},
+			"Storage-and-Backup-Systems": {
+				"category": "Telefonía AVAYA - 3CX On-premise o Cloud",
+				"title": "Telefonía AVAYA - 3CX (On-Premise o Cloud)",
+				"subTitle": "Comunicación Profesional y Presencia Corporativa para tu Empresa",
+				"descriptionOne": "En Planet IP, ofrecemos soluciones de telefonía AVAYA y 3CX en modalidades on-premise o en la nube, diseñadas para garantizar que tu equipo mantenga una comunicación efectiva con clientes, proveedores y otras entidades. La telefonía empresarial es esencial para reforzar la identidad de tu negocio, proporcionando una línea directa y profesional de contacto que representa a tu empresa, más allá del uso de dispositivos personales.",
+				"descriptionTwo": "Nuestros sistemas de telefonía son versátiles y pueden ser utilizados en teléfonos de escritorio, computadoras, portátiles, tablets e incluso en celulares. Esto asegura que, sin importar el dispositivo, tu empresa mantenga una línea de comunicación coherente y profesional, evitando los riesgos asociados al uso de números personales que tus empleados podrían llevarse si dejan la empresa.",
+				"descriptionThree": "Con nuestras soluciones de telefonía AVAYA y 3CX, ayudamos a mantener la identidad de tu empresa y garantizamos una comunicación confiable y profesional con el mundo exterior.",
+				"infoTitle01": "Líneas de comunicación ",
+				"info01": "que representan la identidad profesional de tu empresa.",
+				"infoTitle02": "Accesibilidad en múltiples dispositivos, ",
+				"info02": "desde teléfonos de escritorio hasta celulares.",
+				"infoTitle03": "Presencia empresarial sólida ",
+				"info03": "que refuerza la confianza con clientes y proveedores.",
+				"infoTitle04": "Flexibilidad en la modalidad ",
+				"info04": "on-premise o en la nube, según tus necesidades.",
+				"infoTitle05": "Protección de datos  ",
+				"info05": "al evitar el uso de números personales de los empleados.",
+				"infoTitle06": "Soporte continuo ",
+				"info06": " para asegurar la eficiencia de tus sistemas de telefonía."
+			},
+			"Firewalls": {
+				"category": "Conexiones seguras Site to Site",
+				"title": "Conexiones Seguras Site-to-Site",
+				"subTitle": "Control Centralizado y Seguridad para tus Sucursales",
+				"descriptionOne": "En Planet IP, ofrecemos soluciones de conexiones seguras Site-to-Site que permiten a las empresas con oficinas centralizadas y sucursales mantener un control unificado de sus redes. Este tipo de conexión es ideal para aquellos negocios que necesitan gestionar múltiples ubicaciones desde un solo sitio, garantizando que las comunicaciones y transferencias de datos entre las oficinas sean seguras y eficientes.",
+				"descriptionTwo": "Sin embargo, la implementación de conexiones Site-to-Site depende de los niveles de seguridad en cada ubicación. Si las medidas de seguridad no son las adecuadas, estas conexiones pueden aumentar el riesgo en lugar de reducirlo. Nuestro equipo evalúa cuidadosamente las necesidades de tu negocio y la infraestructura actual para determinar si este tipo de conexión es la mejor opción para ti.",
+				"descriptionThree": "Con nuestras conexiones Site-to-Site, proporcionamos un control centralizado y seguro, optimizando la gestión de tus redes y garantizando la integridad de tus datos.",
+				"infoTitle01": "Control centralizado ",
+				"info01": "para gestionar múltiples ubicaciones desde un solo punto.",
+				"infoTitle02": "Seguridad en la conexión ",
+				"info02": "para proteger la transferencia de datos entre oficinas.",
+				"infoTitle03": "Eficiencia en la gestión ",
+				"info03": "de redes distribuidas, optimizando los recursos de tu negocio.",
+				"infoTitle04": "Evaluación personalizada ",
+				"info04": "para determinar si esta solución es adecuada para ti.",
+				"infoTitle05": "Reducción de riesgos ",
+				"info05": "mediante conexiones seguras y controladas.",
+				"infoTitle06": "Soporte continuo ",
+				"info06": "para asegurar el funcionamiento seguro de tus redes interconectadas."
+			},
+			"Microsoft-365-Implementation": {
+				"category": "FTP Sites",
+				"title": "FTP Sites",
+				"subTitle": "Intercambio Seguro de Información con Terceros",
+				"descriptionOne": "En Planet IP, ofrecemos soluciones de FTP Sites que facilitan el intercambio de información con terceros sin comprometer la seguridad de tu red interna. Estos sitios FTP son ideales para empresas que necesitan compartir datos con proveedores, socios o clientes externos, manteniendo un alto control sobre el acceso y uso de la información.",
+				"descriptionTwo": "Los FTP Sites permiten compartir archivos de forma manual o automática, estableciendo horarios y permisos específicos según las necesidades de tu negocio. A diferencia de métodos informales, un sitio FTP garantiza que solo usuarios autorizados puedan acceder, utilizando credenciales seguras y registrando cada acción realizada, incluyendo qué datos se compartieron, por quién y en qué momento.",
+				"descriptionThree": "Con nuestros FTP Sites, proporcionamos una solución segura y confiable para la transferencia de información, ayudándote a mantener la integridad de tus datos y la seguridad de tu red.",
+				"infoTitle01": "Intercambio seguro ",
+				"info01": "de datos con terceros sin comprometer tu red interna.",
+				"infoTitle02": "Control de acceso  ",
+				"info02": "mediante credenciales para asegurar el uso autorizado de información.",
+				"infoTitle03": "Registros detallados ",
+				"info03": "de cada acción, con historial de usuarios y fechas.",
+				"infoTitle04": "Flexibilidad en configuración ",
+				"info04": "para compartir datos de forma manual o automática.",
+				"infoTitle05": "Horarios definidos ",
+				"info05": "para un acceso controlado según tus necesidades operativas.",
+				"infoTitle06": "Soporte especializado ",
+				"info06": "para implementar y gestionar tu sitio FTP de manera efectiva."
+			}
+		},
+		"Faqs": {
+			"title": "FAQs",
+			"strongTitle": "Preguntas Frecuentes sobre Nuestras Soluciones de Telecomunicaciones",
+			"infoTitle01": "¿Qué beneficios tiene contar con un sistema de telecomunicaciones redundante?",
+			"info01": "La redundancia en telecomunicaciones asegura que tu negocio no se vea afectado por caídas en la conexión. Al contar con dos canales de internet de diferentes proveedores, puedes garantizar la continuidad de tus operaciones, incluso si uno de los servicios falla.",
+			"infoTitle02": "¿Cómo saber si mi empresa necesita sistemas SD-WAN y SASE?",
+			"info02": "SD-WAN y SASE son ideales para empresas que requieren acceso seguro a aplicaciones en la nube y tienen múltiples ubicaciones o empleados remotos. Estos sistemas optimizan la conectividad y refuerzan la seguridad, especialmente si manejas datos sensibles.",
+			"infoTitle03": "¿Cuál es la diferencia entre un canal de comunicación principal y uno de respaldo?",
+			"info03": "El canal principal tiene la mayor capacidad y se usa en condiciones normales, mientras que el canal de respaldo es una conexión secundaria que se activa si el principal falla. Ambos deben tener suficiente capacidad para sostener las necesidades básicas de tu negocio.",
+			"infoTitle04": "¿Qué ancho de banda necesita mi empresa para una comunicación óptima?",
+			"info04": "Recomendamos que el ancho de banda esté al menos un 50% por encima de tus necesidades actuales para garantizar escalabilidad y estabilidad. Esto dependerá del número de usuarios y el tipo de aplicaciones que utilices en tu red.",
+			"infoTitle05": "¿Qué es la telefonía IP y cómo puede beneficiar a mi empresa?",
+			"info05": "La telefonía IP permite hacer llamadas a través de internet en lugar de líneas telefónicas tradicionales. Esto reduce costos, mejora la calidad de las comunicaciones y permite que tus empleados trabajen de forma remota sin perder la conexión con clientes y proveedores.",
+			"infoTitle06": "¿Planet IP ofrece soporte continuo para servicios de telecomunicaciones?",
+			"info06": "Sí, ofrecemos soporte técnico continuo para todas nuestras soluciones de telecomunicaciones. Nuestro equipo está disponible para ayudarte con cualquier problema o ajuste que necesites, asegurando la operatividad y eficiencia de tu sistema."
+		}
+	},
+	"Cybersecurity": {
+		"ArticleMain": {
+			"title": "Soluciones Integrales en ",
+			"strongTitle": "Ciberseguridad",
+			"description": "En Planet IP, te ofrecemos soluciones de ciberseguridad diseñadas para proteger la información crítica de tu negocio, complementando los servicios de infraestructura y comunicaciones. Sabemos que compartir y conectar datos dentro y fuera de tu organización puede generar riesgos, como la pérdida, modificación o daño de información sin que te des cuenta a tiempo. Por eso, nuestras soluciones están enfocadas en anticipar y neutralizar cualquier amenaza antes de que afecte tus operaciones.",
+			"info": "Desde control de acceso hasta planes de recuperación y respaldos en la nube o locales, nuestras soluciones están diseñadas para anticipar y neutralizar amenazas. Protege tu empresa con herramientas adaptadas a tus necesidades y opera con tranquilidad.",
+			"textButtonOne": "Solicita Asesoría Personalizada",
+			"textbuttonTwo": "Quiero que me contacten"
+		},
+		"Services": {
+			"title": "Servicios",
+			"strongTitle": "Servicios que Fortalecen tu Defensa Cibernética",
+			"titleCarousel": "Nuestros partners",
+			"titleBanner": "¿Listo para Optimizar la Tecnología de tu Empresa?",
+			"descriptionBanner": "Contáctanos hoy mismo y recibe una consulta personalizada sobre cómo nuestras soluciones pueden transformar tu infraestructura, comunicaciones y seguridad.",
+			"buttonBanner": "HABLA CON NUESTROS EXPERTOS",
+			"On-Premise-Servers": {
+				"category": "Protección de Endpoints",
+				"title": "Protección de Endpoints",
+				"subTitle": "Seguridad Total para tus Dispositivos",
+				"descriptionOne": "En Planet IP, ofrecemos soluciones de protección de endpoints diseñadas para asegurar todos los dispositivos conectados a tu red, como estaciones de trabajo, portátiles, servidores, smartphones y tabletas. Estos dispositivos son puntos críticos de acceso a las aplicaciones y datos de tu empresa, por lo que su protección es esencial para evitar vulnerabilidades.",
+				"descriptionTwo": "Nuestros sistemas especializados detectan amenazas como spam, phishing, ransomware y virus, además de prevenir su propagación. También incluyen funciones avanzadas como encriptación de discos para proteger información sensible en caso de robo. Con herramientas adaptadas a las necesidades de tu negocio, garantizamos la seguridad de tus endpoints y la continuidad operativa.",
+				"descriptionThree": "Con nuestras soluciones de Protección de Endpoints, proporcionamos seguridad integral y confianza para operar sin riesgos en un entorno digital cada vez más exigente.",
+				"infoTitle01": "Protección avanzada ",
+				"info01": "contra amenazas como ransomware, phishing y virus.",
+				"infoTitle02": "Seguridad en múltiples dispositivos:  ",
+				"info02": "estaciones de trabajo, portátiles, tablets y más.",
+				"infoTitle03": "Encriptación de datos ",
+				"info03": "para evitar accesos no autorizados y robos de información.",
+				"infoTitle04": "Prevención de propagación ",
+				"info04": " mediante sistemas de encapsulamiento de amenazas.",
+				"infoTitle05": "Herramientas personalizadas  ",
+				"info05": "según las necesidades y presupuesto de tu empresa.",
+				"infoTitle06": "oporte continuo ",
+				"info06": "para garantizar la protección de tus dispositivos y datos."
+			},
+			"Datacenters": {
+				"category": "Planes de Recuperación ante Desastres",
+				"title": "Planes de Recuperación ante Desastres (DRP)",
+				"subTitle": "Continuidad Operativa ante Cualquier Emergencia",
+				"descriptionOne": "En Planet IP, diseñamos Planes de Recuperación ante Desastres (DRP) para garantizar que tu empresa pueda recuperarse rápidamente después de un ataque cibernético, robo o desastre natural. Estos documentos detallan paso a paso las acciones necesarias para restaurar la infraestructura, priorizando las áreas críticas de tu negocio y definiendo los tiempos de recuperación.",
+				"descriptionTwo": "Nuestros DRP incluyen estrategias como backups en línea, infraestructuras paralelas y opciones de trabajo remoto. Además, establecen roles claros para cada miembro de tu organización y guías para la comunicación interna y externa durante la crisis, asegurando una recuperación ordenada y eficiente.",
+				"descriptionThree": "Con nuestras soluciones de Planes de Recuperación ante Desastres, proporcionamos tranquilidad y un enfoque estructurado para proteger tu negocio en situaciones imprevistas.",
+				"infoTitle01": "Guías paso a paso ",
+				"info01": "para recuperar infraestructura y comunicaciones tras un desastre.",
+				"infoTitle02": "Prioridad empresarial ",
+				"info02": "definida para restaurar primero las áreas más críticas del negocio.",
+				"infoTitle03": "Respaldo con backups ",
+				"info03": "en la nube o locales, garantizando la protección de datos.",
+				"infoTitle04": "Roles claros ",
+				"info04": "asignados a empleados para una recuperación eficiente y coordinada.",
+				"infoTitle05": "Revisión periódica ",
+				"info05": "para mantener el DRP actualizado ante cambios en tu infraestructura.",
+				"infoTitle06": "Soporte continuo ",
+				"info06": "para ajustar el plan según las necesidades de tu negocio."
+			},
+			"Storage-and-Backup-Systems": {
+				"category": "Monitoreo y detección de Amenazas",
+				"title": "Monitoreo y Detección de Amenazas (MDR)",
+				"subTitle": "Seguridad Activa para tu Infraestructura Digital",
+				"descriptionOne": "En Planet IP, implementamos soluciones de Monitoreo y Detección de Amenazas (MDR) que consolidan y analizan los registros (logs) generados por tus sistemas de seguridad. Estas herramientas trabajan en tiempo real para identificar vulnerabilidades o ataques, enviando alertas inmediatas y ejecutando acciones correctivas para proteger tu infraestructura.",
+				"descriptionTwo": "Estas soluciones están respaldadas por Centros de Operaciones de Seguridad (SOC), conformados por especialistas en ciberseguridad, quienes revisan los eventos detectados y actúan en situaciones críticas. Nuestros servicios incluyen la implementación y coordinación de estas herramientas, asegurando que se adapten a las necesidades de tu negocio.",
+				"descriptionThree": "Con nuestras soluciones de MDR, proporcionamos un monitoreo constante para prevenir riesgos internos y externos, protegiendo la continuidad y la integridad de tu empresa.",
+				"infoTitle01": "Detección en tiempo real ",
+				"info01": "de amenazas y vulnerabilidades en tu infraestructura.",
+				"infoTitle02": "SOC especializado ",
+				"info02": "para una segunda capa de análisis y respuesta a eventos críticos.",
+				"infoTitle03": "Protección contra riesgos internos ",
+				"info03": "como fuga de información o ataques internos.",
+				"infoTitle04": "Análisis integral ",
+				"info04": "de logs generados por los sistemas de seguridad de tu empresa.",
+				"infoTitle05": "Implementación personalizada",
+				"info05": "para ajustarse a las necesidades específicas de tu negocio.",
+				"infoTitle06": "Soporte continuo ",
+				"info06": "para coordinar acciones preventivas y correctivas."
+			},
+			"Firewalls": {
+				"category": "Conexiones Remotas Seguras",
+				"title": "Conexiones Remotas Seguras (SASE)",
+				"subTitle": "Acceso Seguro y Eficiente a tus Aplicativos en la Nube",
+				"descriptionOne": "En Planet IP, implementamos soluciones de Conexiones Remotas Seguras (SASE) que combinan tecnología avanzada para conectar infraestructuras locales y usuarios remotos de manera segura a aplicaciones en la nube. Este enfoque garantiza una distribución eficiente y confiable de los servicios y datos críticos de tu empresa.",
+				"descriptionTwo": "SASE integra herramientas como SD-WAN, CASB, FWaaS y Zero Trust, creando una arquitectura de ciberseguridad robusta. Aunque es ampliamente utilizada por grandes corporaciones, adaptamos esta solución a las necesidades específicas de pequeñas y medianas empresas, brindándote acceso seguro y protección avanzada.",
+				"descriptionThree": "Con nuestras soluciones de SASE, proporcionamos conectividad remota confiable y una capa de seguridad sólida para optimizar la operación de tu negocio.",
+				"infoTitle01": "Acceso seguro ",
+				"info01": "para usuarios remotos a tus aplicativos y servicios en la nube.",
+				"infoTitle02": "Conectividad eficiente ",
+				"info02": "entre infraestructuras locales y servicios cloud.",
+				"infoTitle03": "Arquitectura avanzada ",
+				"info03": "que combina SD-WAN, CASB y Zero Trust.",
+				"infoTitle04": "Protección robusta ",
+				"info04": "para mitigar riesgos asociados a entornos híbridos.",
+				"infoTitle05": "Soluciones adaptadas ",
+				"info05": "a las necesidades específicas de empresas pequeñas y medianas.",
+				"infoTitle06": "Soporte continuo ",
+				"info06": "para garantizar el funcionamiento seguro y eficiente de tus conexiones."
+			}
+		},
+		"Faqs": {
+			"title": "FAQs",
+			"strongTitle": "Preguntas Frecuentes para Fortalecer tu Seguridad Digital",
+			"infoTitle01": "¿Qué es la política de Zero Trust y por qué es importante para mi empresa?",
+			"info01": "La política de Zero Trust se basa en no confiar en ningún usuario o dispositivo de forma predeterminada. Esto significa que todos los accesos deben ser validados previamente, lo que ayuda a prevenir accesos no autorizados y protege los datos críticos de tu empresa.",
+			"infoTitle02": "¿Por qué son importantes los respaldos de seguridad (Backups) y dónde deberían estar almacenados?",
+			"info02": "Los backups aseguran que puedas recuperar tus datos en caso de pérdida o ataque. Es recomendable tener respaldos tanto locales como en la nube para garantizar la disponibilidad y reducir riesgos en caso de fallos o desastres.",
+			"infoTitle03": "¿Cómo puedo saber si mi negocio necesita un plan de recuperación ante desastres (DRP)?",
+			"info03": "Si tu negocio depende de datos digitales o infraestructura tecnológica para operar, un DRP es esencial. Este plan documenta los pasos a seguir para recuperar tus sistemas y datos después de un ataque o desastre, minimizando el impacto en tus operaciones.",
+			"infoTitle04": "¿Cómo puedo garantizar que los datos de mi empresa están seguros ante ciberataques?",
+			"info04": "Implementar soluciones como control de acceso, monitoreo constante, backups regulares y políticas como Zero Trust son clave para mantener tus datos seguros. Además, un plan de recuperación asegura que tu negocio pueda continuar operando incluso en caso de un ataque.",
+			"infoTitle05": "¿Qué diferencia hay entre un DRP y un BRP?",
+			"info05": "Un DRP (Disaster Recovery Plan) se enfoca en la recuperación de infraestructura tecnológica y datos, mientras que un BRP (Business Recovery Plan) prioriza la continuidad operativa de tu negocio, garantizando que funciones esenciales sigan activas incluso durante una interrupción.",
+			"infoTitle06": "¿Qué herramientas de ciberseguridad ofrece Planet IP?",
+			"info06": "En Planet IP, ofrecemos herramientas avanzadas como políticas de Zero Trust, sistemas de control de acceso, soluciones de backup, y planes de recuperación. Adaptamos estas soluciones según las necesidades y el presupuesto de tu negocio."
+		}
+	},
+	"AboutUsP": {
+		"ArticleMainTwo": {
+			"nosotros": "Sobre Nosotros",
+			"tittleOne": "Sobre nosotros",
+			"title": "Sobre nosotros: Expertos en Crear Soluciones, Dedicados a tu Éxito",
+			"description": "En Planet IP, nos especializamos en ofrecer soluciones tecnológicas personalizadas para pequeñas y medianas empresas, combinando experiencia, innovación y un enfoque orientado al cliente. Desde nuestra fundación en 2006, hemos trabajado para diseñar y optimizar infraestructuras, comunicaciones y sistemas de ciberseguridad, adaptados a las necesidades únicas de cada negocio. Con base en Miami, Florida, y presencia en varios estados de EE. UU., Colombia y Ecuador, somos un equipo multidisciplinario comprometido con la excelencia."
+		},
+		"CardInformationTwo": {
+			"tittlecardOne": "Nuestra Misión",
+			"descriptioncardOne": "Proporcionar soluciones tecnológicas accesibles y efectivas que impulsen la seguridad, productividad y crecimiento de las empresas.",
+			"tittlecardTwo": "Nuestra Visión",
+			"descriptioncardTwo": "Ser el socio estratégico preferido en tecnología para pequeñas y medianas empresas en América, destacándonos por la innovación y la calidad."
+		},
+		"Metodologia": {
+			"title01": "Metodología",
+			"title02": "Evaluación Inicial: Conociendo a Fondo tu Negocio",
+			"description": "En Planet IP, nuestro proceso de asesoría comienza con una evaluación exhaustiva de tu empresa. Necesitamos conocer cómo funciona el ciclo de tu negocio para identificar oportunidades de mejora en la manera en que se gestionan y protegen tus datos. Este análisis inicial nos permite diseñar soluciones tecnológicas personalizadas que optimicen tus sistemas y aseguren la disponibilidad de tu información cuando más la necesitas.",
+			"strongDescroption": "El primer paso hacia la transformación tecnológica es entender tu empresa desde adentro."
+		},
+		"CardsInfo": {
+			"StrongDescroption1": "Evaluación de la tecnología actual: ",
+			"Description1": "Analizamos los equipos y sistemas que utilizas actualmente para identificar su funcionalidad y capacidad de respuesta frente a las necesidades de tu negocio.",
+			"StrongDescroption2": "Vida útil de los equipos: ",
+			"Description2": "Determinamos el tiempo de vida restante de tus equipos y evaluamos su desempeño actual para garantizar su eficiencia operativa.",
+			"StrongDescroption3": "Oportunidades de mejora: ",
+			"Description3": "Identificamos cómo optimizar tus sistemas actuales, mejorando su rendimiento y ajustándolos a las demandas tecnológicas de tu empresa.",
+			"StrongDescroption4": "Soporte y garantías: ",
+			"Description4": "Verificamos si tus equipos cuentan con soporte técnico y garantías vigentes que respalden su operación y mantenimiento."
+		},
+		"BannerInf": {
+			"title": "Diseñamos Soluciones Personalizadas para tu Empresa",
+			"description": "Toda la información que nos proporciones se convierte en el combustible para diseñar soluciones tecnológicas a la medida de tu negocio. Nuestro objetivo es brindarte la libertad de enfocarte en lo más importante para tu empresa, mientras nosotros nos encargamos de que tus sistemas de información sean confiables, eficientes y estén siempre disponibles.",
+			"textbutton": "¿Listo para llevar tu negocio al siguiente nivel?"
+		},
+		"InfoCardsOne": {
+			"PrincipalTitle": "¿Por Qué Elegir Planet IP?",
+			"subTitle": "Sobre nosotros",
+			"title01": "Experiencia Comprobada",
+			"description01": "Con más de 18 años en el mercado, hemos ayudado a empresas de diferentes sectores a implementar soluciones tecnológicas efectivas y personalizadas, garantizando resultados confiables."
+		},
+		"InfoCardsTwo": {
+			"title01": "Enfoque Personalizado",
+			"description01": "Entendemos las necesidades únicas de pequeñas y medianas empresas. Diseñamos estrategias y servicios que se adaptan específicamente a los retos y objetivos de cada cliente."
+		},
+		"InfoCardsTree": {
+			"title01": "Soporte Continuo",
+			"description01": "Ofrecemos asesoría y acompañamiento en cada etapa del proceso. Nuestro equipo está disponible para resolver dudas y garantizar que las soluciones funcionen a la perfección."
+		},
+		"InfoCardsFour": {
+			"title01": "Seguridad, Eficiencia y Escalabilidad",
+			"description01": "Nuestras soluciones están diseñadas para proteger tus datos, optimizar tus operaciones y crecer junto con tu negocio, asegurando su sostenibilidad en el tiempo."
+		}
+	},
+	"AboutUsS": {
+		"service01": "*INNOVACIÓN*",
+		"service02": "*CONFIANZA*",
+		"service03": "*COMPROMISO*",
+		"service04": "*ESCALABILIDAD*",
+		"service05": "*CALIDAD",
+		"service06": "*EFICIENCIA*",
+		"service07": "*ADAPTABILIDAD*",
+		"service08": "*INNOVACIÓN*",
+		"service09": "*CONFIANZA*",
+		"service10": "*COMPROMISO*",
+		"service11": "*ESCALABILIDAD*",
+		"service12": "*CALIDAD*",
+		"service13": "*EFICIENCIA*",
+		"service14": "*ADAPTABILIDAD*"
+	},
+	"ContactPage": {
+		"BannerInf": {
+			"title": "Contacto"
+		},
+		"ArticleMainFour": {
+			"subtitle": "Contacto",
+			"title": "Estamos a un Mensaje de Transformar tu Negocio",
+			"description": "En Planet IP, sabemos que cada consulta es única. Completa este formulario con tus datos y cuéntanos cómo podemos ayudarte. Nuestro equipo de expertos revisará tu solicitud y se pondrá en contacto contigo lo antes posible para ofrecerte una solución personalizada."
+		},
+		"FormInfo": {
+			"title": "¿Tienes preguntas? Estamos aquí para ayudarte",
+			"nombre": "Nombre*",
+			"placeholderNombre": "Tu nombre aquí",
+			"apellido": "Apellido*",
+			"placeholderApellido": "Tu apellido aquí",
+			"celular": "Phone*",
+			"placeholderCelular": "El mejor número para contactarte",
+			"correo": "Correo*",
+			"placeholderCorreo": "tu@ejemplo.com",
+			"mensaje": "Mensaje*",
+			"placeholderMensaje": "Cuéntanos más sobre cómo podemos ayudarte",
+			"button": "Enviar Mensaje",
+			"buttontwo": "Enviando mensaje..."
+		},
+		"ContactInfo": {
+			"title": "Contactanos directamente"
+		}
+	},
+	"FAQsPage": {
+		"BannerInfo": {
+			"title": "Preguntas Frecuentes",
+			"subtitle": "Preguntas Frecuentes sobre",
+			"strongtitle": "Planet IP",
+			"titleOne": "Nuestras ",
+			"strongtitleOne": "Soluciones de Infraestructura",
+			"titleTwo": "Nuestras ",
+			"strongtitleTwo": "Soluciones de Telecomunicaciones",
+			"titleThree": "Nuestras ",
+			"strongtitleThree": "Soluciones de Ciberseguridad"
+		},
+		"Faqs": {
+			"infoTitle01": "¿Qué es Planet IP y a qué se dedica?",
+			"info01": "Planet IP es una empresa especializada en ofrecer soluciones tecnológicas integrales en Infraestructura, Comunicaciones y Ciberseguridad. Ayudamos a pequeñas y medianas empresas a optimizar sus sistemas y proteger sus datos con servicios personalizados.",
+			"infoTitle02": "¿Qué tipo de empresas trabajan con Planet IP?",
+			"info02": "Colaboramos con pequeñas y medianas empresas de diferentes sectores que buscan optimizar su infraestructura, mejorar sus comunicaciones y reforzar la ciberseguridad, todo con soluciones adaptadas a sus necesidades y presupuesto.",
+			"infoTitle03": "¿En qué países opera Planet IP?",
+			"info03": "Nuestra base de operaciones está en Miami, Florida, con presencia en varios estados de Estados Unidos, Colombia y Ecuador. Atendemos clientes en toda América con soluciones adaptadas a sus necesidades.",
+			"infoTitle04": "¿Planet IP ofrece soporte continuo?",
+			"info04": "Sí, ofrecemos soporte técnico y asesoría personalizada durante todo el proceso, desde la implementación hasta el mantenimiento continuo de nuestras soluciones.",
+			"infoTitle05": "¿Cuánto tiempo lleva Planet IP en el mercado?",
+			"info05": "Contamos con más de 18 años de experiencia brindando soluciones tecnológicas que combinan innovación, seguridad y eficiencia para empresas de diversos sectores.",
+			"infoTitle06": "¿Cómo puedo ponerme en contacto con Planet IP?",
+			"info06": "Puedes contactarnos a través de nuestro formulario en la página web, por correo electrónico a info@planet-ip.com, o llamarnos al (+1) 786 372 0171. También puedes visitarnos en nuestra oficina en Miami."
+		},
+		"Bottons": {
+			"buttonOne": "Sobre Nosotros",
+			"buttonTwo": "Servicio de Infraestructura",
+			"buttonThree": "Servicio de Telecomunicaciones",
+			"buttonFour": "Servicio de Ciberseguridad"
+		}
+	},
+	"NotFound": {
+		"title": "¡Ups! No pudimos encontrar lo que buscas.",
+		"description": "Parece que la página que estás buscando no existe o fuemovida. No te preocupes, te ayudamos a volver al camino correcto.",
+		"buttonOne": "Volver al inicio",
+		"buttonTwo": "Ver nuestros servicios"
+	},
+	"error502": {
+		"title": "¡Estamos trabajando en ello!",
+		"description": "Algo salió mal al intentar conectarte con el servidor. Puede ser un problema temporal, pero nuestro equipo ya está trabajando para solucionarlo.",
+		"buttonOne": "Intentar de Nuevo",
+		"buttonTwo": "Volver al Inicio"
+	}
+}

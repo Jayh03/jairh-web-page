@@ -1,0 +1,35 @@
+@import '@/styles/globals.module';
+
+.container {
+	margin-top: 38px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	position: relative;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.myskills {
+		position: absolute;
+		top: -120px;
+	}
+}
+@media screen and (min-width: $breakpoint-tablet) {
+	.container {
+		gap: 30px;
+	}
+}
+@media screen and (min-width: $breakpoint-desktop) {
+	.container {
+		&__content {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			&__description {
+				max-width: 695px;
+			}
+		}
+	}
+}
