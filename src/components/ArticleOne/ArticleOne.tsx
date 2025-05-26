@@ -8,11 +8,11 @@ export default function ArticleOne() {
 		<div className={styles.container}>
 			<div className={styles.container__info}>
 				<div className={styles.container__info__text}>
-					<h2>
+					<h1>
 						{'Hola, soy'}
 						<br />
 						<span className={styles.typewriter}>{'Jair Henriquez...|'}</span>
-					</h2>
+					</h1>
 					<strong>{'Desarrollador Frontend'}</strong>
 					<p>
 						{
