@@ -25,11 +25,11 @@ export default function MobileMenu({ isOpen, onClose }: IMobileMenu) {
 								{'Proyectos'}
 							</NavigationLink>
 						</li>
-						<li role='listitem'>
+						{/*<li role='listitem'>
 							<NavigationLink href={'#mycomponnet'}>
 								{'Galería de Componnetes'}
 							</NavigationLink>
-						</li>
+						</li>*/}
 						<li role='listitem'>
 							<NavigationLink href={'#contact'}>{'Contacto'}</NavigationLink>
 						</li>
