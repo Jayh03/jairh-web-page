@@ -6,8 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [unreleased]
 
+## [v1.0.1]
+
+## Feat:
+
+- Se realizo configuracion de robots y sitemap | [#3](https://github.com/Jayh03/jairh-web-page/pull/3) | [Jayh03](https://github.com/Jayh03)
+
 ## [v1.0.0]
 
 ## Feat:
 
-- Se realizo configuracion de desplige en vercel | [#38](https://github.com/Talenty-Github/agencia-topty-web-landing/pull/37) | [Jayh03](https://github.com/Jayh03)
+- Se realizo configuracion de desplige en vercel | [#1](https://github.com/Jayh03/jairh-web-page/pull/1) | [Jayh03](https://github.com/Jayh03)
