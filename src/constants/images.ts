@@ -5,74 +5,86 @@ export const LOGO_CAROUSEL: Array<{
 }> = [
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/html.webp',
-		description: 'logo HTML',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/TypeScript.webp',
+		description: 'logo TypeScript',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/CSS.webp',
-		description: 'CSS',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/JavaScript%20(1).webp',
+		description: 'logo JavaScript',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/JavaScript.webp',
-		description: 'JavaScript',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/HTML5.webp',
+		description: 'logo HTML5',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/REACT.webp',
-		description: 'REACT',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/CSS3.webp',
+		description: 'logo CSS3',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/Next_JS.webp',
-		description: 'Next.JS',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/biblioteca.webp',
+		description: 'logo React',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/GitHub.webp',
-		description: 'GitHub',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/Next.webp',
+		description: 'logo Next',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/html.webp',
-		description: 'logo HTML',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/Github.webp',
+		description: 'logo GitHub',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/CSS.webp',
-		description: 'CSS',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/TypeScript.webp',
+		description: 'logo TypeScript',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/JavaScript.webp',
-		description: 'JavaScript',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/JavaScript%20(1).webp',
+		description: 'logo JavaScript',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/REACT.webp',
-		description: 'REACT',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/HTML5.webp',
+		description: 'logo HTML5',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/Next_JS.webp',
-		description: 'Next.JS',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/CSS3.webp',
+		description: 'logo CSS3',
+		width: 40
 	},
 	{
 		image:
-			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/GitHub.webp',
-		description: 'GitHub',
-		width: 150
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/biblioteca.webp',
+		description: 'logo React',
+		width: 40
+	},
+	{
+		image:
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/Next.webp',
+		description: 'logo Next',
+		width: 40
+	},
+	{
+		image:
+			'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/Github.webp',
+		description: 'logo GitHub',
+		width: 40
 	}
 ];

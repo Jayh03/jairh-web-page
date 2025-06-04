@@ -1,3 +1,4 @@
+import { ChatBox } from '@/components';
 import {
 	AboutMeTwo,
 	Contac,
@@ -20,6 +21,7 @@ export default function Home() {
 				<MyProjects />
 				{/*<Testimonials />*/}
 				<Contac />
+				<ChatBox />
 			</main>
 			<FooterSection />
 		</>

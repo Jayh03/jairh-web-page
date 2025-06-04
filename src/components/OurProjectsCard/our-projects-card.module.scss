@@ -1,16 +1,21 @@
 @import '@/styles/globals.module.scss';
 
 .container {
-	width: 320px;
+	width: 81.8297vw;
+	max-width: 460px;
+	height: 110vw;
+	max-height: 520px;
 	background-color: #102a27;
 	border-radius: 24px;
 	border: 2px solid #23ff07;
 	box-shadow: 0px 1px 5px 8px #00ff4d40;
 
 	&__image {
+		height: 44.414893vw;
+		max-height: 270px;
 		img {
 			width: 100%;
-			height: 184px;
+			height: 100%;
 			border-radius: 24px 24px 0px 0px;
 			object-fit: cover;
 			object-position: top;
@@ -26,7 +31,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		height: 220px;
+		height: 64vw;
+		max-height: 236px;
 
 		&__info {
 			h3 {
@@ -50,6 +56,7 @@
 				-webkit-line-clamp: 4;
 				line-clamp: normal;
 				overflow: hidden;
+				line-height: 22px;
 			}
 		}
 	}
@@ -57,10 +64,23 @@
 
 @media screen and (min-width: $breakpoint-tablet) {
 	.container {
-		width: 320px;
+		width: 43.01075vw;
+		height: 58vw;
+
+		&__image {
+			height: 25.134vw;
+		}
 
 		&__content {
-			height: auto;
+			height: 32vw;
+			max-height: 246px;
 		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.container {
+		max-height: 532px;
+		width: 420px;
 	}
 }

@@ -9,7 +9,7 @@
 	background: #050b10;
 	transform: translateX(100%);
 	transition: 0.7s ease;
-	z-index: 20;
+	z-index: 4000;
 	display: none;
 
 	.content {
@@ -17,7 +17,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		height: 100vh;
+		height: 100dvh;
 		padding: 32px 0 70px 0;
 
 		.menu {
@@ -32,7 +32,6 @@
 			ul {
 				width: 100%;
 				list-style: none;
-
 				li {
 					display: flex;
 					flex-direction: column;

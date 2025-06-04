@@ -1,3 +1,4 @@
+import { IButtonCustom } from './components/Button/Button';
 import { IConten } from './components/Conten/Conten';
 import ILogo from './components/Logocarousel/Logo';
 import ILogoCarousel from './components/Logocarousel/LogoCarousel';
@@ -18,6 +19,7 @@ import {
 import { IOurServicesCard } from './components/OurServicesCard/IOurServicesCard';
 import { IRoundButton } from './components/RoundButton/RoundButton';
 import { ITitles } from './components/Titles/Titles';
+import { IVerticalCarousel } from './components/VerticalCarousel/VerticalCarousel';
 import IMetadataStructure from './metadata/metadata';
 
 export type {
@@ -37,5 +39,7 @@ export type {
 	IOurServicesCard,
 	IContentBlock,
 	IRoundButton,
-	IMarginContainer
+	IMarginContainer,
+	IButtonCustom,
+	IVerticalCarousel
 };

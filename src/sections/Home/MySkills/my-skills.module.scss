@@ -1,15 +1,20 @@
 @import '@/styles/globals.module';
 
 .container {
-	margin-top: 38px;
+	margin-top: 60px;
 	display: flex;
 	flex-direction: column;
-	gap: 24px;
 	position: relative;
+	gap: 24px;
 	&__content {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		&__description {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+		}
 	}
 	.myskills {
 		position: absolute;
@@ -18,18 +23,30 @@
 }
 @media screen and (min-width: $breakpoint-tablet) {
 	.container {
-		gap: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-bottom: 30px;
+		&__content {
+			width: 50%;
+		}
+		.contentTwo {
+			width: 50%;
+		}
 	}
 }
 @media screen and (min-width: $breakpoint-desktop) {
 	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		&__content {
 			display: flex;
 			flex-direction: column;
 			gap: 20px;
-			&__description {
-				max-width: 695px;
-			}
+		}
+		.contentTwo {
+			padding-left: 88px;
 		}
 	}
 }

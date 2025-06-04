@@ -1,0 +1,26 @@
+@import '@/styles/globals.module';
+
+.button {
+	width: 100%;
+	height: $spacing-48;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: $spacing-8;
+	padding: 4px 24px;
+	border-radius: 8px;
+	border: none;
+	font-size: $font-size-16;
+	font-weight: 700;
+	text-decoration: none;
+
+	&:hover {
+		background-color: #fff;
+	}
+}
+
+@media screen and (min-width: $breakpoint-large-tablet) {
+	.button {
+		max-width: 188px;
+	}
+}

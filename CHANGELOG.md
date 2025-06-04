@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [unreleased]
 
+
+## [v1.1.0]
+
+## Feat:
+
+- Se añadio chatbot | [#4](https://github.com/Jayh03/jairh-web-page/pull/4) | [Jayh03](https://github.com/Jayh03)
+- Se añadio boton de cv | [#4](https://github.com/Jayh03/jairh-web-page/pull/4) | [Jayh03](https://github.com/Jayh03)
+- Se añadio carrusel | [#4](https://github.com/Jayh03/jairh-web-page/pull/4) | [Jayh03](https://github.com/Jayh03)
+- Se customiso carrusel minimal | [#4](https://github.com/Jayh03/jairh-web-page/pull/4) | [Jayh03](https://github.com/Jayh03)
+
 ## [v1.0.1]
 
 ## Feat:
