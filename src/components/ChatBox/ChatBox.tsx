@@ -1,6 +1,8 @@
 'use client';
+import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
-import { BotIcon, CloseIcon, NavigatorLogoJH, SendIcon } from '../icons';
+import { CloseIcon, NavigatorLogoJH, SendIcon } from '../icons';
+
 import styles from './chat-box.module.scss';
 
 export default function ChatBox() {
@@ -120,25 +122,40 @@ export default function ChatBox() {
 	return (
 		<>
 			{!isOpen && (
-				<button
-					className={styles['chat-toggle-btn']}
-					onClick={() => setIsOpen(true)}
-					aria-label='Abrir chat'>
-					<BotIcon />
-				</button>
+				<>
+					<button
+						className={styles['chat-toggle-btn']}
+						onClick={() => setIsOpen(true)}
+						aria-label='Abrir chat'>
+						<Image
+							width={300}
+							height={300}
+							src={'/image/iconchat.webp'}
+							alt={'Chat bot'}
+						/>
+					</button>
+					<span className={styles.arrow}></span>
+					<span className={styles.hello}>{'Resuelve tus dudas'}</span>
+				</>
 			)}
 
 			{isOpen && (
 				<div className={styles['chat-container']} ref={chatRef}>
 					<div className={styles['chat-profile']}>
 						<div className={styles['chat-profile-two']}>
-							<NavigatorLogoJH />
+							<Image
+								width={100}
+								height={100}
+								src={'/image/iconchat.webp'}
+								alt={'Chat bot'}
+							/>
+							<p>{'Asistente virtual'}</p>
 						</div>
 						<button
 							className={styles['close-btn']}
 							onClick={() => setIsOpen(false)}
 							aria-label='Cerrar chat'>
-							<CloseIcon />
+							<CloseIcon size={35} />
 						</button>
 					</div>
 
