@@ -17,7 +17,7 @@ export default function ArticleOne() {
 			icon: '/image/Abajo.svg'
 		},
 		{
-			title: 'Descarcar CV',
+			title: 'Descargar CV',
 			url: 'https://umiqvfzaykwktvrpgvmt.supabase.co/storage/v1/object/public/images/Web-personal/documents/hoja_de_vida_Jair_Henriquez.pdf',
 			icon: '/image/descargaIcon.svg',
 			color: '#0A1117',
