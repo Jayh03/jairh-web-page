@@ -1,0 +1,134 @@
+@import '@/styles/globals.module.scss';
+
+.container {
+	width: 100%;
+	height: 400px;
+
+	@keyframes images {
+		from {
+			transform: translateY(0);
+			-webkit-transform: translateY(0);
+		}
+		to {
+			transform: translateY(-100%);
+			-webkit-transform: translateY(-100%);
+		}
+	}
+
+	.container__center {
+		overflow: hidden;
+		white-space: nowrap;
+		height: 100%;
+
+		&__cards {
+			display: block;
+			animation: 40s images infinite linear;
+			-webkit-animation: 40s images infinite linear;
+
+			.image {
+				width: 100%;
+				height: 100%;
+				max-width: 322px;
+				max-height: 360px;
+				object-fit: cover;
+			}
+
+			&__images {
+				display: flex;
+				gap: 12px;
+				margin-bottom: 16px;
+
+				&__one {
+					width: 50%;
+					margin-right: 6px;
+				}
+
+				&__two {
+					width: 50%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+
+		.image {
+			border-radius: 16px;
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			box-shadow: 0px 2.309px 4.04px 0px rgba(255, 255, 255, 0.15);
+		}
+	}
+
+	.container__center:hover .container__center__cards {
+		animation-play-state: paused;
+	}
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.container {
+		height: 100%;
+
+		.container__center {
+			max-height: 550px;
+			&__cards {
+				animation: 50s images infinite linear;
+
+				&__images {
+					&__one {
+						width: 100%;
+					}
+
+					&__two {
+						width: 100%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 797px) {
+	.container {
+		.container__center {
+			&__cards {
+				animation: 50s images infinite linear;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-large-tablet) {
+	.container {
+		max-width: 596px;
+		.container__center {
+			max-height: 420px;
+			&__cards {
+				&__images {
+					flex-direction: row;
+
+					&__one {
+						width: 50%;
+					}
+
+					&__two {
+						width: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.container {
+		max-height: 664px;
+		max-width: 500px;
+	}
+}
+
+@media screen and (min-width: $breakpoint-semilarge-desktop) {
+	.container {
+		max-width: 500px;
+		max-width: 550px;
+	}
+}

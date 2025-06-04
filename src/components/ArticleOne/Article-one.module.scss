@@ -36,27 +36,32 @@
 		display: flex;
 		flex-direction: column;
 		gap: 82px;
-		padding: 46px 16px;
 		color: $white;
 
 		&__text {
 			display: flex;
 			flex-direction: column;
-			gap: 32px;
+			gap: 24px;
 			border-radius: 16px;
 
-			h1 {
-				font-weight: 800;
-				font-size: 32px;
-				z-index: -10;
+			&__one {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
 
-				span {
-					color: #0aff96;
+				h1 {
+					font-weight: 800;
+					font-size: 32px;
+					z-index: -10;
+
+					span {
+						color: #0aff96;
+					}
 				}
-			}
 
-			strong {
-				font-size: 28px;
+				strong {
+					font-size: 28px;
+				}
 			}
 
 			p {
@@ -65,23 +70,10 @@
 			}
 		}
 
-		.link {
-			width: 186px;
-			height: 56px;
-			background-color: #112d28;
-			border-radius: 16px;
-			border: 1px solid #00ff11;
+		&__bottons {
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: $white;
-			text-decoration: none;
-			font-weight: 700;
-			font-size: 20px;
-
-			&:hover {
-				box-shadow: 0px 0px 20px 20px rgba(84, 255, 0, 0.75);
-			}
+			flex-direction: column;
+			gap: 16px;
 		}
 	}
 }
@@ -91,10 +83,9 @@
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 2px solid #61ac8c;
-	font-family: monospace;
 	font-size: 32px;
 	width: 300px;
-	max-width: 100%;
+	//max-width: 100%;
 	animation:
 		typing 3s steps(22) 1s 1 normal both,
 		blink 0.7s step-end infinite;
@@ -105,7 +96,7 @@
 		width: 0;
 	}
 	to {
-		width: 300px;
+		width: 250px;
 	}
 }
 
@@ -122,7 +113,7 @@
 
 		&__info {
 			width: 50%;
-			gap: 70px;
+			gap: 50px;
 		}
 
 		&__image {
@@ -139,26 +130,39 @@
 	}
 }
 
+@media screen and (min-width: $breakpoint-large-tablet) {
+	.container {
+		&__info {
+			&__bottons {
+				display: flex;
+				flex-direction: row;
+			}
+		}
+	}
+}
+
 @media screen and (min-width: $breakpoint-desktop) {
 	.container {
 		gap: 60px;
 		justify-content: space-between;
 
 		&__info {
+			gap: 70px;
 			&__text {
-				gap: 20px;
-
+				gap: 36px;
 				h2 {
 					font-size: 48px;
 				}
-
 				strong {
 					font-size: 32px;
 				}
-
 				p {
 					font-size: 20px;
 				}
+			}
+			&__bottons {
+				display: flex;
+				flex-direction: row;
 			}
 		}
 

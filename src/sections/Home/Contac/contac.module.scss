@@ -2,7 +2,7 @@
 
 .container {
 	background: #050b10;
-	padding: 60px 0px;
+	padding-bottom: 60px;
 	position: relative;
 	&__content {
 		display: flex;
@@ -12,10 +12,5 @@
 	.contact {
 		position: absolute;
 		top: -120px;
-	}
-}
-@media screen and (min-width: $breakpoint-desktop) {
-	.container {
-		padding: 74px 0px;
 	}
 }
