@@ -1,3 +1,7 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
+
 const nextConfig = {
 	images: {
 		remotePatterns: [
@@ -36,7 +40,14 @@ const nextConfig = {
 	experimental: {
 		scrollRestoration: true,
 		webVitalsAttribution: ['CLS', 'LCP']
+	},
+	webpack: (config, { isServer }) => {
+		// Suprimir advertencias específicas de next-intl
+		config.infrastructureLogging = {
+			level: 'error'
+		};
+		return config;
 	}
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

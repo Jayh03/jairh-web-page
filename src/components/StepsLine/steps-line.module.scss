@@ -1,86 +1,237 @@
 @import '@/styles/globals.module';
 
+// Mobile First - Estilos base para móvil
 .wrapper {
 	width: 100%;
-	padding: 16px 0;
-
-	.title {
-		font-weight: 700;
-		font-size: 24px;
-		color: $white;
-
-		margin-bottom: 32px;
-	}
+	padding: 32px 20px;
+	border-radius: 24px;
+	border: 3px solid rgba(0, 255, 0, 0.6);
+	background: rgba(10, 16, 24, 0.85);
+	box-shadow:
+		0 0 60px rgba(0, 255, 9, 0.12),
+		inset 0 0 0 1px rgba(0, 255, 0, 0.1);
 }
 
-.timeline {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+.heading {
+	margin: 0 0 24px;
+	color: $white;
+	font-weight: 800;
+	font-size: 22px;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.headingHighlight {
+	color: #00ff00;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
 	position: relative;
-	padding-top: 8px;
-	padding-left: 8px;
-	overflow-x: auto;
-	scrollbar-width: none;
-
-	&::before {
-		content: '';
-		position: absolute;
-		top: 15px;
-		left: 8px;
-		right: 0;
-		height: 2px;
-		background-color: #1abf5b;
-		z-index: 0;
-		width: 468px;
-	}
 }
 
-.step {
+.stepCard {
+	position: relative;
+	padding: 24px 16px;
+	border-radius: 16px;
+	border: 1px solid rgba(0, 255, 0, 0.25);
+	background: rgba(0, 20, 30, 0.4);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: relative;
+	text-align: center;
+	gap: 12px;
+	transition: all 0.3s ease;
 
-	&::after {
-		content: '';
-		position: absolute;
-		top: 12px;
-		left: 50%;
-		height: 4px;
-		width: 100%;
-		background-color: #1abf5b;
-		z-index: -1;
-	}
-
-	&:last-child::after {
-		display: none;
+	&:hover {
+		border-color: rgba(0, 255, 0, 0.45);
+		background: rgba(0, 30, 40, 0.5);
+		transform: translateY(-2px);
 	}
 }
 
-.circle {
-	width: 16px;
-	height: 16px;
-	background-color: #1abf5b;
-	border-radius: 50%;
-	margin-bottom: 8px;
-	box-shadow: 0 0 8px 4px rgba(26, 191, 91, 0.6);
+.iconWrap {
+	width: 56px;
+	height: 56px;
+	border-radius: 999px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #00ff00;
+	background: rgba(0, 255, 0, 0.12);
+	border: 2px solid rgba(0, 255, 0, 0.35);
+	box-shadow: 0 0 20px rgba(0, 255, 0, 0.15);
+	flex-shrink: 0;
 }
 
-.label {
-	color: white;
+.stepIcon {
+	width: 28px;
+	height: 28px;
+}
+
+.stepTitle {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.95);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.stepSubtitle {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.6);
 	font-size: 14px;
-	white-space: nowrap;
-	z-index: 2000;
+	font-weight: 400;
+	line-height: 1.4;
 }
 
+// Tablet y superior (744px+)
+@media screen and (min-width: $breakpoint-tablet) {
+	.wrapper {
+		padding: 36px 28px;
+		border-radius: 28px;
+	}
+
+	.heading {
+		font-size: 26px;
+		margin-bottom: 28px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 18px;
+	}
+
+	.stepCard {
+		padding: 26px 18px;
+		gap: 14px;
+	}
+
+	.iconWrap {
+		width: 60px;
+		height: 60px;
+	}
+
+	.stepIcon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.stepTitle {
+		font-size: 17px;
+	}
+
+	.stepSubtitle {
+		font-size: 13.5px;
+	}
+}
+
+// Large Tablet y superior (1024px+)
+@media screen and (min-width: $breakpoint-large-tablet) {
+	.wrapper {
+		padding: 40px 32px;
+		border-radius: 32px;
+		border: 4px solid rgba(0, 255, 0, 0.6);
+	}
+
+	.heading {
+		font-size: 28px;
+		margin-bottom: 32px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.stepCard {
+		padding: 28px 20px;
+		gap: 16px;
+	}
+
+	.iconWrap {
+		width: 64px;
+		height: 64px;
+	}
+
+	.stepIcon {
+		width: 32px;
+		height: 32px;
+	}
+
+	.stepTitle {
+		font-size: 18px;
+	}
+
+	.stepSubtitle {
+		font-size: 14px;
+	}
+}
+
+// Desktop y superior (1280px+)
 @media screen and (min-width: $breakpoint-desktop) {
 	.wrapper {
-		.title {
-			font-size: 38px;
-			margin-bottom: 70px;
-			width: 400px;
-			margin-bottom: 32px;
+		padding: 48px 40px;
+		border-radius: 36px;
+	}
+
+	.heading {
+		font-size: 32px;
+		margin-bottom: 40px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(6, 1fr);
+		gap: 16px;
+	}
+
+	.stepCard {
+		padding: 32px 20px;
+		gap: 18px;
+
+		// Conectores entre tarjetas
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: -8px;
+			width: 16px;
+			height: 2px;
+			background: linear-gradient(
+				to right,
+				rgba(0, 255, 0, 0.6),
+				rgba(0, 255, 0, 0.2)
+			);
+			transform: translateY(-50%);
+			z-index: 1;
 		}
+
+		&:last-child::after {
+			display: none;
+		}
+	}
+
+	.iconWrap {
+		width: 72px;
+		height: 72px;
+		border: 2.5px solid rgba(0, 255, 0, 0.4);
+		box-shadow: 0 0 24px rgba(0, 255, 0, 0.2);
+	}
+
+	.stepIcon {
+		width: 36px;
+		height: 36px;
+	}
+
+	.stepTitle {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.stepSubtitle {
+		font-size: 14px;
+		line-height: 1.5;
 	}
 }

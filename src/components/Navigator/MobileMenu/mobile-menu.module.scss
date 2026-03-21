@@ -40,6 +40,11 @@
 			}
 
 			.languages {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: $spacing-16 0;
+				border-bottom: none;
 				select {
 					width: 100%;
 				}

@@ -1,86 +1,177 @@
-@import '@/styles/globals.module.scss';
+@import '@/styles/globals.module';
 
-.container {
-	width: 81.8297vw;
-	max-width: 460px;
-	height: 110vw;
-	max-height: 520px;
-	background-color: #102a27;
-	border-radius: 24px;
+/* ---- Card ---- */
+.card {
+	width: 320px;
+	background-color: #0a1a14;
+	border-radius: 20px;
 	border: 2px solid #23ff07;
-	box-shadow: 0px 1px 5px 8px #00ff4d40;
+	box-shadow: 0 2px 20px 2px rgba(35, 255, 7, 0.15);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	transition: box-shadow 0.25s ease;
 
-	&__image {
-		height: 44.414893vw;
-		max-height: 270px;
-		img {
-			width: 100%;
-			height: 100%;
-			border-radius: 24px 24px 0px 0px;
-			object-fit: cover;
-			object-position: top;
-			box-shadow:
-				0 0 1px 0 rgba(0, 0, 0, 0.15),
-				0 0 0 1px rgba(108, 108, 108, 0.3);
-		}
-	}
-
-	&__content {
-		padding: $spacing-16;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 64vw;
-		max-height: 236px;
-
-		&__info {
-			h3 {
-				color: $white;
-				font-size: 24px;
-				font-weight: $font-weight-bold;
-				line-height: 29.3px;
-				text-align: left;
-			}
-
-			p {
-				color: $white;
-				font-size: $font-size-16;
-				font-weight: $font-weight-regular;
-				letter-spacing: 0.08px;
-				text-align: left;
-				margin: $spacing-16 0 $spacing-24 0;
-				display: -webkit-box;
-				white-space: normal;
-				-webkit-box-orient: vertical;
-				-webkit-line-clamp: 4;
-				line-clamp: normal;
-				overflow: hidden;
-				line-height: 22px;
-			}
-		}
+	&:hover {
+		box-shadow: 0 4px 32px 4px rgba(35, 255, 7, 0.28);
 	}
 }
 
+/* ---- Image area ---- */
+.imageWrap {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+}
+
+.mainImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+	display: block;
+}
+
+.iconBadge {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 34px;
+	height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(10, 26, 20, 0.75);
+	backdrop-filter: blur(4px);
+	border: 2px solid #23ff07;
+	border-radius: 9px;
+	color: #23ff07;
+}
+
+.categoryBadge {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: rgba(10, 26, 20, 0.8);
+	backdrop-filter: blur(4px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 10px;
+	font-weight: 500;
+	padding: 4px 10px;
+	border-radius: 20px;
+	pointer-events: none;
+}
+
+/* ---- Thumbnail strip ---- */
+.thumbStrip {
+	display: flex;
+	gap: 6px;
+	padding: 6px 10px;
+	background: #0a1a14;
+	border-bottom: 1px solid rgba(35, 255, 7, 0.1);
+}
+
+.thumb {
+	flex: 1;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.thumbImg {
+	width: 100%;
+	height: 52px;
+	object-fit: cover;
+	object-position: top;
+	display: block;
+}
+
+/* ---- Body ---- */
+.body {
+	padding: 14px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	flex: 1;
+}
+
+.title {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.description {
+	color: rgba(255, 255, 255, 0.65);
+	font-size: 12px;
+	line-height: 1.6;
+	flex: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	margin: 0;
+}
+
+/* ---- Footer ---- */
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 4px;
+}
+
+.verMas {
+	color: #23ff07;
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	transition: gap 0.15s ease;
+
+	&:hover {
+		gap: 8px;
+	}
+
+	span {
+		font-size: 15px;
+	}
+}
+
+.menuDots {
+	color: #23ff07;
+	font-size: 16px;
+	letter-spacing: 3px;
+	cursor: default;
+	line-height: 1;
+}
+
+/* ========================
+   TABLET (744px+)
+======================== */
 @media screen and (min-width: $breakpoint-tablet) {
-	.container {
-		width: 43.01075vw;
-		height: 58vw;
+	.card {
+		width: 320px;
+	}
 
-		&__image {
-			height: 25.134vw;
-		}
-
-		&__content {
-			height: 32vw;
-			max-height: 246px;
-		}
+	.thumbImg {
+		height: 58px;
 	}
 }
 
+/* ========================
+   DESKTOP (1280px+)
+======================== */
 @media screen and (min-width: $breakpoint-desktop) {
-	.container {
-		max-height: 532px;
-		width: 420px;
+	.card {
+		width: 320px;
 	}
 }

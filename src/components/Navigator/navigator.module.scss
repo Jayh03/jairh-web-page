@@ -1,18 +1,24 @@
 @import '@/styles/globals.module';
 
-.content {
-	height: 164px;
+.spacer {
+	// Mantiene el espacio para el header fixed
+	height: 64px;
 }
 
-.sticky {
-	width: 100%;
-	padding: 0 16px;
-	top: 0px;
-	left: 0px;
-	z-index: 2000;
+.header {
 	position: fixed;
-	display: flex;
-	justify-content: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 2000;
+	// Prevenir blur/desenfoque
+	transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .container {
@@ -20,12 +26,23 @@
 		width: 100%;
 		padding-right: 12px;
 		margin-top: 20px;
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
 		align-items: center;
-		justify-content: space-between;
 		background-color: #102a27;
 		border-radius: 16px;
 		box-shadow: 0px 1px 15px 15px #00ff4d73;
+
+		&__logo {
+			justify-self: start;
+		}
+
+		&__language {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			justify-self: center;
+		}
 	}
 
 	.shadow {
@@ -42,8 +59,20 @@
 	.shadow.open {
 		display: block;
 	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		gap: $spacing-8;
+		justify-self: end;
+	}
 }
 @media screen and (min-width: $breakpoint-tablet) {
+	.spacer {
+		// 80px (altura del center) + 20px (margin-top)
+		height: 100px;
+	}
+
 	.container {
 		&__center {
 			height: 80px;
@@ -67,6 +96,17 @@
 		&__center {
 			width: 100%;
 			max-width: 1200px;
+			display: flex;
+			justify-content: space-between;
+
+			&__logo {
+				justify-self: auto;
+			}
+
+			&__language {
+				display: block;
+			}
+
 			&__contact {
 				display: block;
 				a {

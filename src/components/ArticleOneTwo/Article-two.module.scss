@@ -1,67 +1,114 @@
 @import '@/styles/globals.module';
 
-.container {
+.section {
+	position: relative;
 	background: #050b10;
-	margin: 60px 0px;
+	margin: 60px 0;
+	padding: 18px 0 0;
+	overflow: hidden;
+}
+
+.backgroundCircle {
+	position: absolute;
+	top: -180px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 760px;
+	height: 760px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+.header {
+	position: relative;
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 10px;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 26px;
+}
 
-	&__content {
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-		&__info {
-			display: flex;
-			flex-direction: column;
-			gap: 30px;
-		}
-	}
+.heading {
+	color: $white;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 1.1;
+	margin: 0;
+}
 
-	&__image {
-		width: 100%;
-		height: 308px;
+.headingHighlight {
+	color: #00ff00;
+	position: relative;
+	padding-bottom: 8px;
 
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: top;
-			border: 1px solid #00ff00;
-			border-radius: 16px;
-			box-shadow: 0px 4px 48px 3px #00ff0940;
-		}
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 4px;
+		border-radius: 99px;
+		background: #00ff00;
+		box-shadow: 0 0 22px rgba(0, 255, 0, 0.35);
 	}
 }
+
+.subheading {
+	color: rgb(255 255 255 / 89%);
+	max-width: 520px;
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.topGrid {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 18px;
+	margin-bottom: 18px;
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+	.header {
+		margin-bottom: 34px;
+	}
+
+	.subheading {
+		font-size: 16px;
+	}
+
+	.topGrid {
+		gap: 16px;
+	}
+}
+
 @media screen and (min-width: $breakpoint-large-tablet) {
-	.container {
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-		gap: 40px;
-		&__content {
-			width: 50%;
-			gap: 60px;
-			&__info {
-				display: flex;
-				flex-direction: column;
-				gap: 30px;
-			}
-		}
-		&__image {
-			width: 500px;
-			height: 500px;
+	.section {
+		margin: 74px 0;
+	}
 
-			img {
-				max-width: 500px;
-				max-height: 500px;
-			}
-		}
+	.topGrid {
+		grid-template-columns: 1.25fr 0.95fr;
+		gap: 18px;
+		align-items: stretch;
 	}
 }
+
 @media screen and (min-width: $breakpoint-desktop) {
-	.container {
-		//margin: 74px 0px;
-		gap: 100px;
+	.heading {
+		font-size: 48px;
+	}
+
+	.backgroundCircle {
+		width: 940px;
+		height: 940px;
+		top: -260px;
 	}
 }

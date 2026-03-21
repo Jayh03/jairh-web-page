@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## [unreleased]
 
+## [v1.2.0]
+
+- Se realizo refactor de la landing | [#7](https://github.com/Jayh03/jairh-web-page/pull/7) | [Jayh03](https://github.com/Jayh03)
+
 ## [v1.1.1]
 
 - Se realizo refactor de chatbot | [#4](https://github.com/Jayh03/jairh-web-page/pull/4) | [Jayh03](https://github.com/Jayh03)

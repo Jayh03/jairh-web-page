@@ -4,6 +4,8 @@ import ArrowRigth from './ArrowRigth';
 import BotIcon from './BotIcon';
 import ChevronUpIcon from './ChevronUpIcon';
 import CloseIcon from './CloseIcon';
+import DownIcon from './DownIcon';
+import DownloadIcon from './DownloadIcon';
 import EmailIcon from './EmailIcon';
 import GithubIcon from './GithubIcon';
 import LinkedinIcon from './LinkedinIcon';
@@ -23,6 +25,8 @@ export {
 	EmailIcon,
 	LinkedinIcon,
 	GithubIcon,
+	DownIcon,
+	DownloadIcon,
 	BotIcon,
 	CloseIcon,
 	SendIcon

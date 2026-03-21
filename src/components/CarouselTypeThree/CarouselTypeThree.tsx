@@ -10,54 +10,75 @@ import OurProjectsCard from '../OurProjectsCard/OurProjectsCard';
 
 export default function CarouselTypeThree({ itemsList }: ICarouselTypeThree) {
 	const [activeIndex, setActiveIndex] = useState<number | 0>(0);
-
 	const { mainCarousel, buttonLeft, buttonRight, handleScroll } = useCarousel();
+	const clamped = Math.max(0, Math.min(activeIndex, itemsList.length - 1));
 
 	return (
 		<div className={styles.container}>
-			<div className={styles.container__center}>
-				<div className={styles.button}>
-					<RoundButton
-						onClick={() => {
-							onLeftClick(mainCarousel, activeIndex);
-							setActiveIndex(activeIndex - 1);
-						}}
-						disabled={buttonLeft}
-						icon='/image/arrow_forward_left.svg'
-					/>
+			<div
+				className={styles.scrollArea}
+				ref={mainCarousel}
+				onScroll={(e) => handleScroll(e)}>
+				<div className={styles.cardRow}>
+					{itemsList.map(
+						(
+							{
+								title,
+								image,
+								description,
+								link,
+								titlebotton,
+								tags,
+								thumbnails,
+								category,
+								iconType
+							},
+							index: number
+						) => (
+							<OurProjectsCard
+								key={index}
+								title={title}
+								image={image}
+								description={description}
+								link={link}
+								titlebotton={titlebotton}
+								tags={tags}
+								thumbnails={thumbnails}
+								category={category}
+								iconType={iconType}
+							/>
+						)
+					)}
 				</div>
-				<div
-					className={styles.container__center__menu__body}
-					ref={mainCarousel}
-					onScroll={(e) => handleScroll(e)}>
-					<div className={styles.container__center__menu__body__content}>
-						{itemsList.map(
-							(
-								{ title, image, description, link, titlebotton },
-								index: number
-							) => (
-								<OurProjectsCard
-									key={index}
-									title={title}
-									image={image}
-									description={description}
-									link={link}
-									titlebotton={titlebotton}
-								/>
-							)
-						)}
-					</div>
+			</div>
+
+			<div className={styles.pagination}>
+				<RoundButton
+					onClick={() => {
+						onLeftClick(mainCarousel, activeIndex);
+						setActiveIndex(activeIndex - 1);
+					}}
+					disabled={buttonLeft}
+					icon='/image/arrow_forward_left.svg'
+				/>
+
+				<div className={styles.dots}>
+					{itemsList.map((_, i) => (
+						<span
+							key={i}
+							className={i === clamped ? styles.pageActive : styles.pageDot}
+						/>
+					))}
 				</div>
-				<div className={styles.buttonRight}>
-					<RoundButton
-						onClick={() => {
-							onRightClick(mainCarousel, activeIndex);
-							setActiveIndex(activeIndex + 1);
-						}}
-						disabled={buttonRight}
-						icon='/image/arrow_forward.svg'
-					/>
-				</div>
+
+				<RoundButton
+					onClick={() => {
+						onRightClick(mainCarousel, activeIndex);
+						setActiveIndex(activeIndex + 1);
+					}}
+					disabled={buttonRight}
+					icon='/image/arrow_forward.svg'
+				/>
 			</div>
 		</div>
 	);

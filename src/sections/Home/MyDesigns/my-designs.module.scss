@@ -1,0 +1,48 @@
+@import '@/styles/globals.module';
+
+.container {
+	background: #000000;
+	padding: 60px 0;
+	position: relative;
+
+	.mydesigns {
+		position: absolute;
+		top: -110px;
+	}
+}
+
+/* ---- Header ---- */
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+.heading {
+	margin: 0;
+	color: $white;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 1.15;
+}
+
+.headingHighlight {
+	color: #00ff00;
+}
+
+.subheading {
+	margin: 0;
+	color: rgb(255 255 255 / 89%);
+	max-width: 520px;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.heading {
+		font-size: 40px;
+	}
+}

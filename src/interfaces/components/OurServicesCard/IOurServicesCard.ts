@@ -4,6 +4,10 @@ export interface IOurServicesCard {
 	image: string;
 	link: string;
 	titlebotton: string;
+	tags?: string[];
+	thumbnails?: string[];
+	category?: string;
+	iconType?: string;
 }
 
 export interface IOurServicesConten {

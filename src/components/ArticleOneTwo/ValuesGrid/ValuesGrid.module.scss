@@ -1,0 +1,133 @@
+@import '../shared';
+
+// Mobile First - Estilos base para móvil
+.valuesGrid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 16px;
+	margin-bottom: 18px;
+}
+
+.valueCard {
+	@include cardBase();
+	padding: 24px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	align-items: flex-start;
+}
+
+.valueHeader {
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+	align-items: center;
+}
+
+.valueIconWrap {
+	width: 48px;
+	height: 48px;
+	border-radius: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 255, 0, 0.1);
+	border: 1px solid rgba(0, 255, 0, 0.25);
+	color: #00ff00;
+	flex-shrink: 0;
+}
+
+.valueIcon {
+	width: 24px;
+	height: 24px;
+}
+
+.valueTitle {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.95);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.valueDescription {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.65);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+// Tablet y superior (744px+)
+@media screen and (min-width: $breakpoint-tablet) {
+	.valuesGrid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 18px;
+	}
+
+	.valueCard {
+		padding: 26px 22px;
+		gap: 14px;
+	}
+
+	.valueHeader {
+		gap: 14px;
+	}
+
+	.valueIconWrap {
+		width: 52px;
+		height: 52px;
+		border-radius: 15px;
+	}
+
+	.valueIcon {
+		width: 26px;
+		height: 26px;
+	}
+
+	.valueTitle {
+		font-size: 17px;
+	}
+
+	.valueDescription {
+		font-size: 14px;
+	}
+}
+
+// Large Tablet y superior (1024px+)
+@media screen and (min-width: $breakpoint-large-tablet) {
+	.valuesGrid {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+	}
+
+	.valueCard {
+		padding: 28px 24px;
+		gap: 16px;
+	}
+
+	.valueHeader {
+		gap: 16px;
+	}
+
+	.valueIconWrap {
+		width: 56px;
+		height: 56px;
+		border-radius: 16px;
+	}
+
+	.valueIcon {
+		width: 28px;
+		height: 28px;
+	}
+
+	.valueTitle {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.valueDescription {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+}

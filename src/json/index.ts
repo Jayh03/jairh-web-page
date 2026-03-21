@@ -1,3 +1,3 @@
-import { metadataDashboard } from './metadata/metdata';
+import { metadataDashboard, metadataDashboardUS } from './metadata/metdata';
 
-export { metadataDashboard };
+export { metadataDashboard, metadataDashboardUS };

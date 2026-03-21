@@ -1,8 +1,8 @@
-export default function NavigatorLogoJH() {
+export default function NavigatorLogoJH({ size }: { size?: number } = {}) {
 	return (
 		<svg
-			width='80'
-			height='80'
+			width={size ?? 80}
+			height={size ?? 80}
 			viewBox='0 0 80 80'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'>

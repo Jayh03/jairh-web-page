@@ -11,24 +11,35 @@ export default function ButtonCustom({
 	icon,
 	colorTitle,
 	colorBackground,
-	isBorder
+	isBorder,
+	variant = 'default'
 }: IButtonCustom) {
-	const backgroun = '#105B42';
+	const isCv = variant === 'cv';
+	const isTransparent = !isCv && colorBackground === 'transparent';
+	const hasBorder = isCv || isBorder || isTransparent;
+
+	const foregroundColor =
+		colorTitle ?? (isCv || isTransparent || isBorder ? '#00FF00' : '#000000');
 
 	const buttonStyle = {
-		color: colorTitle ?? '#FFF',
-		background: colorBackground ?? backgroun,
-		border: isBorder ? `2px solid ${colorTitle ?? '#475569'}` : ''
+		background: isTransparent
+			? 'transparent'
+			: (colorBackground ?? (isCv ? '#000000' : '#00FF00')),
+		border: hasBorder ? `2px solid #00FF00` : 'none',
+		['--btn-fg' as any]: foregroundColor
 	};
 
 	return (
 		<Link
 			href={url}
-			target={onTarget ? '_blank' : ''}
-			className={styles.button}
+			target={onTarget ? '_blank' : undefined}
+			rel={onTarget ? 'noopener noreferrer' : undefined}
+			className={`${styles.button} ${isTransparent ? styles.transparent : ''} ${
+				isCv ? styles.cv : ''
+			}`}
 			style={buttonStyle}>
 			<IconButton icon={icon} />
-			{title}
+			<span className={styles.title}>{title}</span>
 		</Link>
 	);
 }

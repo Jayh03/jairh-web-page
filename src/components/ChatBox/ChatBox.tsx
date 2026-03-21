@@ -1,11 +1,12 @@
 'use client';
-import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { CloseIcon, NavigatorLogoJH, SendIcon } from '../icons';
+import { useTranslations } from 'next-intl';
 
 import styles from './chat-box.module.scss';
 
 export default function ChatBox() {
+	const t = useTranslations('ChatBot');
 	const [messages, setMessages] = useState<{ user: boolean; text: string }[]>(
 		[]
 	);
@@ -15,34 +16,16 @@ export default function ChatBox() {
 	const chatEndRef = useRef<HTMLDivElement>(null);
 	const chatRef = useRef<HTMLDivElement>(null);
 
-	const MAX_PREGUNTAS = 5;
-	const LIMITE_TIEMPO_MS = 24 * 60 * 60 * 1000;
-
-	const verificarYReiniciarContador = () => {
-		const timestamp = localStorage.getItem('preguntasTimestamp');
-		if (timestamp) {
-			const tiempoTranscurrido = Date.now() - parseInt(timestamp);
-			if (tiempoTranscurrido > LIMITE_TIEMPO_MS) {
-				localStorage.setItem('preguntas', '0');
-				localStorage.setItem('preguntasTimestamp', Date.now().toString());
-				console.log('⏰ Contador reiniciado después de 24 horas.');
-			}
-		} else {
-			// Si no hay timestamp, lo inicializamos
-			localStorage.setItem('preguntasTimestamp', Date.now().toString());
-		}
-	};
-
 	useEffect(() => {
 		if (isOpen && messages.length === 0) {
 			setMessages([
 				{
 					user: false,
-					text: '¡Hola! 👋 Soy el asistente virtual de Jair Henriquez. ¿En qué puedo ayudarte hoy?'
+					text: t('welcomeMessage')
 				}
 			]);
 		}
-	}, [isOpen, messages.length]);
+	}, [isOpen, messages.length, t]);
 
 	useEffect(() => {
 		function handleClickOutside(event: MouseEvent) {
@@ -65,33 +48,6 @@ export default function ChatBox() {
 	const sendMessage = async () => {
 		if (!input.trim()) return;
 
-		verificarYReiniciarContador();
-
-		let preguntasRealizadas = parseInt(
-			localStorage.getItem('preguntas') || '0'
-		);
-
-		if (preguntasRealizadas >= MAX_PREGUNTAS) {
-			const mensajeLimite =
-				'Has alcanzado el límite de preguntas. Para más información, comunícate conmigo por WhatsApp: https://wa.me/573106560314 o al correo: jhenriquezpallares@gmail.com';
-
-			setMessages((prev) => [
-				...prev,
-				{ user: true, text: input },
-				{ user: false, text: mensajeLimite }
-			]);
-			setInput('');
-			return;
-		}
-
-		// Aumentar y guardar conteo + timestamp si no existe
-		preguntasRealizadas += 1;
-		localStorage.setItem('preguntas', preguntasRealizadas.toString());
-
-		if (!localStorage.getItem('preguntasTimestamp')) {
-			localStorage.setItem('preguntasTimestamp', Date.now().toString());
-		}
-
 		const newMessages = [...messages, { user: true, text: input }];
 		setMessages(newMessages);
 		setInput('');
@@ -108,7 +64,7 @@ export default function ChatBox() {
 		} catch (err) {
 			setMessages((prev) => [
 				...prev,
-				{ user: false, text: 'Ocurrió un error al procesar tu consulta.' }
+				{ user: false, text: t('errorMessage') }
 			]);
 		} finally {
 			setIsTyping(false);
@@ -126,16 +82,11 @@ export default function ChatBox() {
 					<button
 						className={styles['chat-toggle-btn']}
 						onClick={() => setIsOpen(true)}
-						aria-label='Abrir chat'>
-						<Image
-							width={300}
-							height={300}
-							src={'/image/iconchat.webp'}
-							alt={'Chat bot'}
-						/>
+						aria-label={t('openChat')}>
+						<NavigatorLogoJH size={28} />
 					</button>
 					<span className={styles.arrow}></span>
-					<span className={styles.hello}>{'Resuelve tus dudas'}</span>
+					<span className={styles.hello}>{t('resolveDubts')}</span>
 				</>
 			)}
 
@@ -143,19 +94,16 @@ export default function ChatBox() {
 				<div className={styles['chat-container']} ref={chatRef}>
 					<div className={styles['chat-profile']}>
 						<div className={styles['chat-profile-two']}>
-							<Image
-								width={100}
-								height={100}
-								src={'/image/iconchat.webp'}
-								alt={'Chat bot'}
-							/>
-							<p>{'Asistente virtual'}</p>
+							<div className={styles['avatar-wrapper']}>
+								<NavigatorLogoJH size={28} />
+							</div>
+							<p>{t('virtualAssistant')}</p>
 						</div>
 						<button
 							className={styles['close-btn']}
 							onClick={() => setIsOpen(false)}
-							aria-label='Cerrar chat'>
-							<CloseIcon size={35} />
+							aria-label={t('closeChat')}>
+							<CloseIcon size={16} />
 						</button>
 					</div>
 
@@ -188,7 +136,7 @@ export default function ChatBox() {
 							value={input}
 							onChange={(e) => setInput(e.target.value)}
 							onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
-							placeholder='Consulta tus dudas...'
+							placeholder={t('placeholder')}
 						/>
 						<button className={styles['chat-send-btn']} onClick={sendMessage}>
 							<SendIcon />

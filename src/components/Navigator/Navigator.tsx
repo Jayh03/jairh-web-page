@@ -3,28 +3,28 @@ import Menu from './Menu/Menu';
 import Logo from './Logo/Logo';
 import MobileMenu from './MobileMenu/MobileMenu';
 import HamburgerButton from './HamburgerButton/HamburgerButton';
-import { useOpen, useSticky } from '@/hooks';
+import { LanguageSwitcher } from '@/components';
+import { useOpen } from '@/hooks';
 import MarginContainer from '../MarginContainer/MarginContainer';
 
 import styles from './navigator.module.scss';
 
 export default function Navigator() {
-	const { isSticky } = useSticky();
 	const { menuOpen, toggleMenu } = useOpen();
 
-	const headerClassName = isSticky
-		? `${styles.container} ${styles.sticky}`
-		: styles.container;
-
 	return (
-		<div className={styles.content}>
-			<MarginContainer>
-				<header className={headerClassName} id='header'>
+		<>
+			<div className={styles.spacer}></div>
+			<header className={styles.header} id='header'>
+				<MarginContainer>
 					<nav className={styles.container__center}>
 						<div className={styles.container__center__logo}>
 							<Logo />
 						</div>
 						<Menu />
+						<div className={styles.container__center__language}>
+							<LanguageSwitcher />
+						</div>
 						<div className={styles.container__menu}>
 							<HamburgerButton
 								isOpen={menuOpen}
@@ -45,8 +45,8 @@ export default function Navigator() {
 							/>
 						</div>
 					</nav>
-				</header>
-			</MarginContainer>
-		</div>
+				</MarginContainer>
+			</header>
+		</>
 	);
 }

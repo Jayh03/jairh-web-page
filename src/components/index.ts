@@ -5,6 +5,8 @@ import Button from './Button/Button';
 import ButtonCustom from './ButtonCustom/ButtonCustom';
 import IconButton from './ButtonCustom/IconButton/IconButton';
 import ChatBox from './ChatBox/ChatBox';
+import DesignsGrid from './DesignsGrid/DesignsGrid';
+import LanguageSwitcher from './LanguageSwitcher/LanguageSwitcher';
 import MarginContainer from './MarginContainer/MarginContainer';
 import MenuProjects from './MenuProjects/MenuProjects';
 import NavigationLink from './Navigator/NavigationLink/NavigationLink';
@@ -24,6 +26,7 @@ export {
 	Titles,
 	StepsLine,
 	MenuProjects,
+	DesignsGrid,
 	Button,
 	OurProjectsCard,
 	TestimonialCarouselTwo,
@@ -31,5 +34,6 @@ export {
 	ChatBox,
 	ButtonCustom,
 	IconButton,
-	VerticalCarousel
+	VerticalCarousel,
+	LanguageSwitcher
 };

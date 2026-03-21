@@ -2,19 +2,43 @@
 
 .link {
 	color: $white;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: $font-weight-bold;
 	text-decoration: none;
 	line-height: 40px;
+	position: relative;
+	display: inline-block;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background-color: #00ff00;
+		transition: width 0.3s ease-in-out;
+	}
 
 	&:hover {
-		color: rgb(123, 255, 0);
-	}
-}
+		color: #00ff00;
 
-@media screen and (min-width: $breakpoint-desktop) {
-	.link {
-		line-height: 60px;
-		text-transform: uppercase;
+		&::after {
+			width: 100%;
+		}
+	}
+
+	&:active {
+		&::after {
+			width: 100%;
+		}
+	}
+
+	&.active {
+		color: #00ff00;
+
+		&::after {
+			width: 100%;
+		}
 	}
 }
