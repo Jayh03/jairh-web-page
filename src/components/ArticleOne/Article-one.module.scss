@@ -4,88 +4,432 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: stretch;
 	overflow: hidden;
-	background-color: #0a1117;
+	background-color: #000000;
+	margin-top: 34px;
+	padding: 60px 0;
+}
 
-	&__image {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 0;
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	width: 100%;
+	align-items: flex-start;
+}
 
-		.imageDesk {
-			display: none;
-		}
+.badgeContainer {
+	margin-bottom: 24px;
+}
 
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: left;
-			border-radius: 16px;
-		}
+.badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 16px;
+	background-color: transparent;
+	border: 1px solid #00ff00;
+	border-radius: 24px;
+	color: #00ff00;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.badgeDot {
+	width: 8px;
+	height: 8px;
+	background-color: #00ff00;
+	border-radius: 50%;
+	animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0%,
+	100% {
+		opacity: 1;
 	}
+	50% {
+		opacity: 0.5;
+	}
+}
 
-	&__info {
-		position: relative;
-		z-index: 1;
+.container__info {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	color: $white;
+	padding: 8px;
+
+	&__text {
 		display: flex;
 		flex-direction: column;
-		gap: 82px;
-		color: $white;
+		gap: 24px;
 
-		&__text {
-			display: flex;
-			flex-direction: column;
-			gap: 24px;
-			border-radius: 16px;
-
-			&__one {
-				display: flex;
-				flex-direction: column;
-				gap: 10px;
-
-				h1 {
-					font-weight: 800;
-					font-size: 32px;
-					z-index: -10;
-
-					span {
-						color: #0aff96;
-					}
-				}
-
-				strong {
-					font-size: 28px;
-				}
-			}
-
-			p {
-				font-size: 16px;
-				font-weight: 500;
-			}
-		}
-
-		&__bottons {
+		&__one {
 			display: flex;
 			flex-direction: column;
 			gap: 16px;
+
+			h1 {
+				font-weight: 800;
+				font-size: 32px;
+				line-height: 1.2;
+				margin: 0;
+
+				span {
+					color: #00ff00;
+				}
+			}
+		}
+
+		p {
+			font-size: 16px;
+			font-weight: 400;
+			max-width: 500px;
+			color: rgb(255 255 255 / 89%);
+			line-height: 1.6;
 		}
 	}
+
+	&__bottons {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
+.container__info {
+	--r: 26px;
+	position: relative;
+	overflow: hidden;
+	border-radius: var(--r);
+
+	/* clave anti-leche: en vez de blanco, usa tinte oscuro */
+	background: rgba(0, 0, 0, 0.18);
+
+	/* borde muy sutil, no blanco fuerte */
+	border: 1px solid rgba(255, 255, 255, 0.1);
+
+	/* evita brightness alto (eso “lava” y le da leche) */
+	-webkit-backdrop-filter: blur(28px) saturate(140%) contrast(120%);
+	backdrop-filter: blur(28px) saturate(140%) contrast(120%);
+
+	/* profundidad: menos “inset blanco”, más sombra real */
+	box-shadow:
+		0 28px 70px rgba(0, 0, 0, 0.55),
+		inset 0 1px 0 rgba(255, 255, 255, 0.1),
+		inset 0 -12px 30px rgba(0, 0, 0, 0.35);
+
+	outline: 1px solid rgba(255, 255, 255, 0.04);
+	outline-offset: -2px;
+}
+
+/* brillo súper sutil (si esto es fuerte, se ve lechoso) */
+.container__info::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		-45deg,
+		rgba(255, 255, 255, 0.16) 0%,
+		rgba(255, 255, 255, 0.06) 24%,
+		rgba(255, 255, 255, 0.02) 45%,
+		rgba(255, 255, 255, 0) 60%
+	);
+	pointer-events: none;
+}
+
+/* sheen/dispersion MUY tenue */
+.container__info::after {
+	content: '';
+	position: absolute;
+	inset: -35%;
+	background:
+		radial-gradient(
+			circle at 30% 35%,
+			rgba(255, 0, 120, 0.06),
+			transparent 45%
+		),
+		radial-gradient(
+			circle at 70% 30%,
+			rgba(0, 170, 255, 0.06),
+			transparent 50%
+		),
+		radial-gradient(
+			circle at 45% 75%,
+			rgba(180, 255, 255, 0.04),
+			transparent 55%
+		);
+	mix-blend-mode: screen;
+	opacity: 0.14; /* bajísimo = no lechoso */
+	filter: blur(2px);
+	pointer-events: none;
+}
+
+/* asegura que tu contenido quede encima */
+.container__info > * {
+	position: relative;
+	z-index: 1;
+}
+
+.roleContainer {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	strong {
+		font-size: 20px;
+		font-weight: 600;
+	}
+}
+
+.codeIcon {
+	color: #00ff00;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.skillBadges {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.skillBadge {
+	padding: 8px 18px;
+	background-color: transparent;
+	border: 1px solid #00ff00;
+	color: #00ff00;
+	border-radius: 9999px;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.socialIcons {
+	display: flex;
+	gap: 16px;
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		border: 1px solid #00ff00;
+		border-radius: 10px;
+		color: #00ff00;
+		background-color: transparent;
+		transition: all 0.3s ease;
+
+		&:hover {
+			background-color: rgba(0, 255, 0, 0.08);
+			box-shadow: 0 0 14px rgba(0, 255, 0, 0.18);
+			transform: translateY(-1px);
+		}
+
+		svg {
+			width: 22px;
+			height: 22px;
+			transition: color 0.3s ease;
+		}
+	}
+}
+
+.socialIconLinkedin {
+	svg {
+		transform: translateX(1px);
+	}
+}
+
+.container__image {
+	display: none;
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.imageWrap {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+}
+
+.imageFrame {
+	position: relative;
+	width: 100%;
+	padding: 36px;
+	border-radius: 28px;
+	border: 2px solid #00ff00;
+	background: radial-gradient(
+		120% 120% at 50% 25%,
+		rgba(16, 25, 36, 0.9) 0%,
+		rgba(6, 10, 14, 0.95) 55%,
+		#000000 100%
+	);
+	box-shadow:
+		0 0 52px rgba(0, 255, 0, 0.34),
+		0 0 18px rgba(0, 255, 0, 0.18),
+		inset 0 0 0 1px rgba(0, 255, 0, 0.1);
+	overflow: hidden;
+	aspect-ratio: 4 / 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.frameCorner {
+	position: absolute;
+	z-index: 1;
+	width: 96px;
+	height: 96px;
+	pointer-events: none;
+	filter: drop-shadow(0 0 12px rgba(0, 255, 0, 0.35));
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background: #00ff00;
+		border-radius: 2px;
+	}
+
+	&::before {
+		width: 86px;
+		height: 3px;
+	}
+
+	&::after {
+		width: 3px;
+		height: 86px;
+	}
+
+	&[data-corner='tl'] {
+		top: 22px;
+		left: 22px;
+
+		&::before {
+			top: 0;
+			left: 0;
+		}
+
+		&::after {
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&[data-corner='tr'] {
+		top: 22px;
+		right: 22px;
+
+		&::before {
+			top: 0;
+			right: 0;
+		}
+
+		&::after {
+			top: 0;
+			right: 0;
+		}
+	}
+
+	&[data-corner='br'] {
+		bottom: 22px;
+		right: 22px;
+
+		&::before {
+			bottom: 0;
+			right: 0;
+		}
+
+		&::after {
+			bottom: 0;
+			right: 0;
+		}
+	}
+
+	&[data-corner='bl'] {
+		bottom: 22px;
+		left: 22px;
+
+		&::before {
+			bottom: 0;
+			left: 0;
+		}
+
+		&::after {
+			bottom: 0;
+			left: 0;
+		}
+	}
+}
+
+.imageMobile {
+	position: relative;
+	z-index: 2;
+	width: 72%;
+	height: auto;
+	object-fit: contain;
+	filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.5));
+}
+
+.floatingIcon {
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 54px;
+	height: 54px;
+	background-color: rgba(12, 18, 26, 0.92);
+	border: 1px solid #00ff00;
+	border-radius: 14px;
+	color: #00ff00;
+	box-shadow:
+		0 0 18px rgba(0, 255, 0, 0.22),
+		0 10px 26px rgba(0, 0, 0, 0.35);
+
+	&[data-position='top-right'] {
+		top: 18px;
+		right: 18px;
+		transform: translate(80%, -84%);
+	}
+
+	&[data-position='left-center'] {
+		top: 50%;
+		left: 0;
+		transform: translate(-50%, -50%);
+	}
+
+	&[data-position='right-center'] {
+		top: auto;
+		bottom: 92px;
+		right: 0;
+		transform: translate(50%, 0);
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.codeIconSmall {
+	font-size: 20px;
+	font-weight: bold;
+	color: #00ff00;
 }
 
 .typewriter {
 	display: inline-block;
 	white-space: nowrap;
 	overflow: hidden;
-	border-right: 2px solid #61ac8c;
+	border-right: 2px solid #00ff00;
 	font-size: 32px;
 	width: 300px;
-	//max-width: 100%;
 	animation:
 		typing 3s steps(22) 1s 1 normal both,
 		blink 0.7s step-end infinite;
@@ -96,7 +440,7 @@
 		width: 0;
 	}
 	to {
-		width: 250px;
+		width: 300px;
 	}
 }
 
@@ -107,72 +451,116 @@
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
+	.content {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 80px;
+	}
+
 	.container {
+		margin-top: 0px;
+	}
+
+	.container__info {
+		width: 100%;
+		padding: 16px;
+	}
+	.container__info__bottons {
 		flex-direction: row;
-		align-items: center;
-
-		&__info {
-			width: 50%;
-			gap: 50px;
-		}
-
-		&__image {
-			position: relative;
-			width: 50%;
-			height: auto;
-
-			img {
-				width: 100%;
-				height: auto;
-				margin-top: 60px;
-			}
-		}
+		width: 80%;
 	}
 }
 
 @media screen and (min-width: $breakpoint-large-tablet) {
-	.container {
-		&__info {
-			&__bottons {
-				display: flex;
-				flex-direction: row;
-			}
+	.content {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.container__info {
+		width: 55%;
+		padding: 0px;
+
+		/* quita transparencia y blur */
+		background: transparent;
+		-webkit-backdrop-filter: none;
+		backdrop-filter: none;
+		border-radius: 0px;
+
+		/* quita “capas” visuales */
+		box-shadow: none;
+		border: none;
+		outline: none;
+
+		/* si usas pseudo-elementos para brillos */
+		&::before,
+		&::after {
+			content: none; /* o display:none; */
 		}
+	}
+
+	.container__image {
+		display: flex;
+		width: 45%;
+		justify-content: flex-end;
+	}
+
+	.container__info__bottons {
+		flex-direction: row;
+		width: 100%;
 	}
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
+	.content {
+		gap: 100px;
+	}
 	.container {
-		gap: 60px;
-		justify-content: space-between;
+		margin-top: 0px;
+	}
 
-		&__info {
-			gap: 70px;
-			&__text {
-				gap: 36px;
-				h2 {
-					font-size: 48px;
-				}
-				strong {
-					font-size: 32px;
-				}
-				p {
-					font-size: 20px;
-				}
+	.container__info {
+		gap: 50px;
+
+		&__text {
+			gap: 36px;
+
+			&__one h1 {
+				font-size: 48px;
 			}
-			&__bottons {
-				display: flex;
-				flex-direction: row;
+
+			p {
+				font-size: 18px;
+				max-width: 550px;
 			}
 		}
 
-		&__image {
-			max-width: 495px;
-			max-height: 468px;
+		&__bottons {
+			flex-direction: row;
+		}
+	}
 
-			img {
-				margin-top: 0px;
-			}
+	.roleContainer strong {
+		font-size: 24px;
+	}
+
+	.codeIcon {
+		font-size: 28px;
+	}
+
+	.typewriter {
+		font-size: 48px;
+		width: 450px;
+	}
+
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		to {
+			width: 450px;
 		}
 	}
 }

@@ -1,0 +1,10 @@
+@import '@/styles/globals.module';
+
+@mixin cardBase() {
+	background: rgba(10, 16, 24, 0.72);
+	border: 1px solid rgba(0, 255, 0, 0.35);
+	border-radius: 18px;
+	box-shadow:
+		0 0 40px rgba(0, 255, 9, 0.06),
+		inset 0 0 0 1px rgba(0, 255, 0, 0.06);
+}

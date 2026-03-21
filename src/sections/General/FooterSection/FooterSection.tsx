@@ -1,11 +1,15 @@
+'use client';
 import Link from 'next/link';
 import { MarginContainer } from '@/components';
 import { GithubIcon, LinkedinIcon } from '@/components/icons';
+import { useTranslations } from 'next-intl';
 
 import styles from './footer-section.module.scss';
 
 export default function FooterSection() {
+	const t = useTranslations('Footer');
 	const currentYear: Date = new Date();
+
 	return (
 		<footer className={styles.container}>
 			<MarginContainer>
@@ -15,11 +19,11 @@ export default function FooterSection() {
 							<strong>
 								{'© Copyright '} {currentYear.getFullYear()}
 							</strong>
-							{'    JAIR HENRIQUEZ'}
+							{`    ${t('copyright')}`}
 						</p>
 					</div>
 					<div className={styles.socialmedia}>
-						<p>{'Sigueme en:'}</p>
+						<p>{t('followMe')}</p>
 
 						<Link
 							href={'https://www.linkedin.com/in/jair-henríquez-102a54195'}

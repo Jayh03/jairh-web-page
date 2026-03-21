@@ -1,36 +1,44 @@
 @import '@/styles/globals.module';
 
 .round-button {
-	width: $spacing-32;
-	height: $spacing-32;
-
+	width: 48px;
+	height: 48px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	background-color: $white;
-
-	border-radius: 100%;
-	border: none;
-
+	background-color: transparent;
+	border-radius: 50%;
+	border: 2.5px solid #00ff00;
+	color: #00ff00;
 	cursor: pointer;
-
-	transition: all 0.3s ease-in-out;
+	transition:
+		background-color 0.2s ease,
+		box-shadow 0.2s ease;
 
 	&:hover {
-		background-color: #e3e3e3;
+		background-color: rgba(0, 255, 0, 0.1);
+		box-shadow: 0 0 16px rgba(0, 255, 0, 0.35);
 	}
 
 	&:disabled {
-		opacity: 0.5;
-		background-color: $white;
-
-		cursor: auto;
-
-		transition: none;
+		opacity: 0.3;
+		cursor: not-allowed;
 
 		&:hover {
-			border: none;
+			background-color: transparent;
+			box-shadow: none;
+		}
+	}
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+	.round-button {
+		width: 72px;
+		height: 72px;
+
+		svg {
+			width: 32px;
+			height: 32px;
 		}
 	}
 }

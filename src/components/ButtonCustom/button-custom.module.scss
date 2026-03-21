@@ -2,25 +2,68 @@
 
 .button {
 	width: 100%;
-	height: $spacing-48;
+	height: 56px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: $spacing-8;
-	padding: 4px 24px;
-	border-radius: 8px;
+	gap: 12px;
+	padding: 12px 32px;
+	border-radius: 18px;
 	border: none;
-	font-size: $font-size-16;
+	font-size: 18px;
 	font-weight: 700;
 	text-decoration: none;
+	background-color: #00ff00;
+	color: #000000;
+	color: var(--btn-fg, #000000);
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
 
 	&:hover {
-		background-color: #fff;
+		transform: translateY(-2px);
+		box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3);
 	}
+
+	&.transparent {
+		background-color: transparent;
+		border: 2px solid #00ff00;
+		color: #00ff00;
+
+		&:hover {
+			background-color: rgba(0, 255, 0, 0.1);
+		}
+	}
+
+	&.cv {
+		box-shadow: 0 0 0 rgba(0, 255, 0, 0.2);
+
+		&:hover {
+			transform: translateY(-2px);
+			box-shadow:
+				0 10px 22px rgba(0, 255, 0, 0.25),
+				0 0 18px rgba(0, 255, 0, 0.2);
+		}
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+		flex-shrink: 0;
+		fill: currentColor;
+		color: inherit;
+	}
+}
+
+.title {
+	flex: 1;
+	text-align: center;
+	font-weight: 700;
+	color: inherit;
 }
 
 @media screen and (min-width: $breakpoint-large-tablet) {
 	.button {
-		max-width: 188px;
+		max-width: 280px;
 	}
 }

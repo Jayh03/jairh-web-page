@@ -1,0 +1,133 @@
+@import '../shared';
+
+// Mobile First - Estilos base para móvil
+.statsGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 14px;
+}
+
+.statCard {
+	@include cardBase();
+	padding: 20px 14px 18px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
+}
+
+.statIconWrap {
+	width: 48px;
+	height: 48px;
+	border-radius: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	flex-shrink: 0;
+}
+
+.statIcon {
+	width: 24px;
+	height: 24px;
+}
+
+.statValue {
+	margin: 0;
+	color: #00ff00;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+}
+
+.statLabel {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+.statIconBlue {
+	background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+	box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.statIconPink {
+	background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+	box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+.statIconOrange {
+	background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+	box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+
+.statIconYellow {
+	background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+	box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+// Tablet y superior (744px+)
+@media screen and (min-width: $breakpoint-tablet) {
+	.statsGrid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 18px;
+	}
+
+	.statCard {
+		padding: 30px 22px 26px;
+		gap: 15px;
+	}
+
+	.statIconWrap {
+		width: 60px;
+		height: 60px;
+		border-radius: 17px;
+	}
+
+	.statIcon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.statValue {
+		font-size: 52px;
+	}
+
+	.statLabel {
+		font-size: 14.5px;
+	}
+}
+
+// Large Tablet y superior (1024px+)
+@media screen and (min-width: $breakpoint-large-tablet) {
+	.statsGrid {
+		gap: 20px;
+	}
+
+	.statCard {
+		padding: 32px 24px 28px;
+		gap: 16px;
+	}
+
+	.statIconWrap {
+		width: 64px;
+		height: 64px;
+		border-radius: 18px;
+	}
+
+	.statIcon {
+		width: 32px;
+		height: 32px;
+	}
+
+	.statValue {
+		font-size: 56px;
+	}
+
+	.statLabel {
+		font-size: 15px;
+	}
+}

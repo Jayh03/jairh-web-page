@@ -7,20 +7,23 @@ export default function useSticky() {
 		const header = document.getElementById('header');
 		if (!header) return;
 
-		const stickyOffset = header.offsetTop;
-
 		const handleScroll = () => {
-			const isHeaderSticky = window.scrollY > stickyOffset;
+			const isHeaderSticky = window.scrollY > 0;
 
-			setIsSticky(isHeaderSticky);
+			if (isHeaderSticky !== isSticky) {
+				setIsSticky(isHeaderSticky);
+			}
 		};
 
-		window.addEventListener('scroll', handleScroll);
+		// Verificar posición inicial
+		handleScroll();
+
+		window.addEventListener('scroll', handleScroll, { passive: true });
 
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+	}, [isSticky]);
 
 	return { isSticky };
 }

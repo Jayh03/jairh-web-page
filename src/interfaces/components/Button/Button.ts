@@ -4,6 +4,7 @@ export interface IButtonCustom {
 	colorTitle?: string;
 	colorBackground?: string;
 	icon: string;
+	variant?: 'default' | 'cv';
 	isBorder?: boolean;
 	onTarget?: boolean;
 }
